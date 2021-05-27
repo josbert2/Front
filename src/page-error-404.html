@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Error 404 | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.googleFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+<body class="bg-img-hero-fixed" style="background-image: url(@@autopath/assets/svg/illustrations/error-404.svg);">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-bg-transparent header-abs-top py-3">
+    <div class="header-section">
+      <div id="logoAndNav" class="container">
+        <nav class="navbar">
+          <a class="navbar-brand" href="@@autopath/index.html" aria-label="Front">
+            <img src="@@autopath/assets/svg/logos/logo.svg" alt="Logo">
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="d-lg-flex">
+      <div class="container d-lg-flex align-items-lg-center min-vh-lg-100 space-4">
+        <div class="w-lg-60 w-xl-50">
+          <!-- Title -->
+          <div class="mb-4">
+            <img class="max-w-23rem mb-3" src="@@autopath/assets/svg/illustrations/error-number-404.svg" alt="SVG Illustration">
+            <p class="lead">Oops! Looks like you followed a bad link. <br> If you think this is a problem with us, please <a href="#">tell us.</a></p>
+          </div>
+          <!-- End Title -->
+
+          <a class="btn btn-wide btn-primary transition-3d-hover" href="@@autopath/index.html">Back Home</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero Section -->
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/variant-2.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="@@autopath/node_modules/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
+</body>
+</html>

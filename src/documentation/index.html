@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Introduction - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/jquery-ui-dist/jquery-ui.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        @@include('@@autopath/partials/documentation/header.html')
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-top-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="@@autopath/assets/json/docs-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          @@include('@@autopath/partials/documentation/sidebar.html', {"link": "index.html"})
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-top-1 space-bottom-2">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1>Introduction</h1>
+            <p class="lead">Get started with Front, Responsive Website Template for building responsive, mobile-first sites, with Bootstrap and a template starter page.</p>
+          </div>
+
+          <!-- Alert -->
+          <div class="alert alert-soft-dark" role="alert">
+            <h3>Front is a Static HTML Template</h3>
+            For the time being, we do <span class="font-weight-bold">NOT</span> offer any tutorials or any other materials on how to integrate Front with any CMS, Web Application Frameworks (including Angular, Vue, React, etc.) or any other similar technology. However, since <span class="font-weight-bold">Front is a static HTML/CSS and JS template</span>, then it <em>should be compatible</em> with any backend technology and frameworks.
+          </div>
+          <!-- End Alert -->
+
+          <!-- Alert -->
+          <div class="alert alert-soft-dark media align-items-baseline mb-6" role="alert">
+            <i class="fas fa-info-circle mr-2"></i>
+            <div class="media-body">We highly recommend to check out <a class="font-weight-bold" href="https://themes.getbootstrap.com/guide/" target="_blank">The Guide <i class="fas fa-external-link-alt fa-xs"></i></a> an official Bootstrap Theme guidelines by Bootstrap core team.</div>
+          </div>
+          <!-- End Alert -->
+
+          <!-- Heading -->
+          <h2 id="file-structure" class="hs-docs-heading">
+            File Structure <a class="anchorjs-link" href="#file-structure" aria-label="Anchor" data-anchorjs-icon="#"></a>
+          </h2>
+          <!-- End Heading -->
+
+          <details class="font-size-1 text-dark mb-6" open>
+            <summary class="mb-1">
+              <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold">front</span>
+            </summary>
+
+            <ul class="hs-docs-list-sm list-unstyled pl-4 mb-7">
+              <li>
+                <details open>
+                  <summary class="mb-1">
+                    <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold">src</span>
+                  </summary>
+                  <ul class="list-unstyled pl-4">
+                    <li>
+                      <details open>
+                        <summary class="mb-1">
+                          <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold">assets</span>
+                        </summary>
+                        <ul>
+                          <li><i class="fas fa-folder text-secondary mr-1"></i>
+                            <span class="font-weight-bold">css</span> -  <span class="text-secondary">Compiled CSS files</span>
+                          </li>
+                          <li><i class="fas fa-folder text-secondary mr-1"></i>
+                            <span class="font-weight-bold">img</span> - <span class="text-secondary">Image files</span>
+                          </li>
+                          <li><i class="fas fa-folder text-secondary mr-1"></i>
+                            <span class="font-weight-bold">json</span> - <span class="text-secondary">JSON files</span>
+                          </li>
+                          <li><i class="fas fa-folder text-secondary mr-1"></i>
+                            <span class="font-weight-bold">js</span> -  <span class="text-secondary">Core Javascript and library wrapper files</span>
+                          </li>
+                          <li><i class="fas fa-folder text-secondary mr-1"></i>
+                            <span class="font-weight-bold">scss</span> - <span class="text-secondary">SASS (SCSS) source files</span>
+                          </li>
+                          <li><i class="fas fa-folder text-secondary mr-1"></i>
+                            <span class="font-weight-bold">svg</span> - <span class="text-secondary">SVG files</span>
+                          </li>
+                          <li><i class="fas fa-folder text-secondary mr-1"></i>
+                            <span class="font-weight-bold">svg-src</span> - <span class="text-secondary">SVG source files where variables can be passed (files will be generated into <span class="font-weight-bold">svg</span> folder)</span>
+                          </li>
+                          <li><i class="fas fa-folder text-secondary mr-1"></i>
+                            <span class="font-weight-bold">vendor</span> - <span class="text-secondary">Third pary libraries (plugins)</span>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+
+                    <li>
+                      <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold">partials</span> - <span class="text-secondary">HTML partials, learn more details on Front's <a href="../documentation/gulp.html#gulp-file-include">Gulp Documentation</a> page</span>
+                    </li>
+
+                    <li>
+                      <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold">snippets</span> - <span class="text-secondary">Ready-to-use combined components</span>
+                    </li>
+
+                    <li>
+                      <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold">documentation</span> - <span class="text-secondary">Documentation pages</span>
+                    </li>
+
+                    <li>
+                      <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold">demo-*</span> - <span class="text-secondary">Demo options with inner pages, such as Courses, App Marketplace etc.</span>
+                    </li>
+
+                    <li><i class="far fa-image mr-1"></i> favicon.ico</li>
+                    <li><i class="far fa-file-alt fa-fw mr-1"></i> index.html</li>
+                    <li><i class="far fa-file-alt fa-fw mr-1"></i> ...</li>
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold">dist</span> - <span class="text-secondary">Generated distribution files</span>
+              </li>
+
+              <li>
+                <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold">gulpfiles</span> -  <span class="text-secondary">Gulp Toolkit files</span>
+              </li>
+
+              <li>
+                <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold"><s>build</s></span> - <span class="text-secondary">Generated performance ready fully production files (by default the folder is not included)</span>
+              </li>
+
+              <li>
+                <i class="fas fa-folder text-secondary mr-1"></i> <span class="font-weight-bold"><s>node_modules</s></span> - <span class="text-secondary">NPM dependencies (by default the folder is not included)</span>
+              </li>
+
+              <li><i class="far fa-file-alt fa-fw mr-1"></i> config.js</li>
+              <li><i class="far fa-file-alt fa-fw mr-1"></i> gulpfile.js</li>
+              <li><i class="far fa-file-alt fa-fw mr-1"></i> package-lock.json</li>
+              <li><i class="far fa-file-alt fa-fw mr-1"></i> package.json</li>
+              <li><i class="far fa-file-alt fa-fw mr-1"></i> README.md</li>
+            </ul>
+          </details>
+
+          <!-- Heading -->
+          <h2 id="starter-template" class="hs-docs-heading">
+            Starter template <a class="anchorjs-link" href="#starter-template" aria-label="Anchor" data-anchorjs-icon="#"></a>
+          </h2>
+          <!-- End Heading -->
+
+          <p>Starter template is a snippet code for blank HTML page. Use the below snippet as a way to quickly start any new blank page. If you are using Front's Gulp Toolkit, you may use HTML (Gulp) snippet code (read more about it on <a href="../documentation/gulp.html">Gulp</a> page).</p>
+
+          <!-- Card -->
+          <div class="card card-bordered mb-7">
+            <!-- Header -->
+            <div class="card-header">
+              <!-- Nav -->
+              <ul class="nav nav-segment" id="navTab1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="nav-htmlTab1" data-toggle="pill" href="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="true">HTML</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="nav-gulpTab1" data-toggle="pill" href="#nav-gulp1" role="tab" aria-controls="nav-gulp1" aria-selected="false">HTML (Gulp)</a>
+                </li>
+              </ul>
+              <!-- End Nav -->
+            </div>
+            <!-- End Header -->
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="navTabContent1">
+              <div class="tab-pane fade show active" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+                <pre>
+                  <code class="language-html" data-lang="html">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                      &lt;head&gt;
+                        &lt;!-- Required Meta Tags Always Come First --&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+
+                        &lt;!-- Title --&gt;
+                        &lt;title&gt;Hello, world!&lt;/title&gt;
+
+                        &lt;!-- Favicon --&gt;
+                        &lt;link rel="shortcut icon" href="./favicon.ico"&gt;
+
+                        &lt;!-- Font --&gt;
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"&gt;
+
+                        &lt;!-- CSS Front Template --&gt;
+                        &lt;link rel="stylesheet" href="./assets/css/theme.css"&gt;
+                      &lt;/head&gt;
+
+                      &lt;body&gt;
+                        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+                        &lt;!-- JS Global Compulsory --&gt;
+                        &lt;script src="./assets/vendor/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+                        &lt;script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"&gt;&lt;/script&gt;
+                        &lt;script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+
+                        &lt;!-- JS Front --&gt;
+                        &lt;script src="./assets/js/hs.core.js"&gt;&lt;/script&gt;
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                  </code>
+                </pre>
+              </div>
+
+              <div class="tab-pane fade" id="nav-gulp1" role="tabpanel" aria-labelledby="nav-gulpTab1">
+                <pre>
+                  <code class="language-html" data-lang="html">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                      &lt;head&gt;
+                        &lt;!-- Required Meta Tags Always Come First --&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+
+                        &lt;!-- Title --&gt;
+                        &lt;title&gt;Hello, world!&lt;/title&gt;
+
+                        &lt;!-- Favicon --&gt;
+                        &lt;link rel="shortcut icon" href="[@@]autopath/favicon.ico"&gt;
+
+                        &lt;!-- Font --&gt;
+                        &lt;link href="[@@]vars.googleFont" rel="stylesheet"&gt;
+
+                        &lt;!-- CSS Front Template --&gt;
+                        &lt;!-- bundlecss:theme [[@@]autopath] --&gt;
+                        &lt;link rel="stylesheet" href="[@@]autopath/assets/css/theme.css"&gt;
+                      &lt;/head&gt;
+
+                      &lt;body&gt;
+                        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+                        &lt;!-- JS Global Compulsory @@deleteLine:build --&gt;
+                        &lt;script src="[@@]autopath/assets/vendor/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+                        &lt;script src="[@@]autopath/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"&gt;&lt;/script&gt;
+                        &lt;script src="[@@]autopath/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+
+                        &lt;!-- JS Implementing Plugins --&gt;
+                        &lt;!-- bundlejs:vendor [[@@]autopath] --&gt;
+
+                        &lt;!-- JS Front --&gt;
+                        &lt;!-- bundlejs:theme [[@@]autopath] --&gt;
+                        &lt;script src="[@@]autopath/assets/js/hs.core.js"&gt;&lt;/script&gt;
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+          <!-- End Card -->
+
+          <!-- Heading -->
+          <h2 id="js-structure" class="hs-docs-heading">
+            JavaScript structure <a class="anchorjs-link" href="#js-structure" aria-label="Anchor" data-anchorjs-icon="#"></a>
+          </h2>
+          <!-- End Heading -->
+
+          <!-- Heading -->
+          <h3 id="core-js" class="hs-docs-heading mt-2">
+            Core JavaScript <a class="anchorjs-link" href="#core-js" aria-label="Anchor" data-anchorjs-icon="#"></a>
+          </h3>
+          <!-- End Heading -->
+
+          <p>The foundation of the JavaScript structure in Front is based on one main object which does not change the root when the new functionalities are added, but instead, it only extends without affecting the behavior of the core object. The name of the object is <code>HSCore</code> and the content of this object looks like this:</p>
+
+          <pre class="rounded mb-7">
+            <code class="language-js" data-lang="js">
+              /*
+              * HSCore
+              * @version: 2.0.0 (Mon, 25 Nov 2019)
+              * @requires: jQuery v3.0 or later
+              * @author: HtmlStream
+              * @event-namespace: .HSCore
+              * @license: Htmlstream Libraries (https://htmlstream.com/licenses)
+              * Copyright 2020 Htmlstream
+              */
+              'use strict';
+
+              $.extend({
+                HSCore: {
+                  init: function () {
+                    $(document).ready(function () {
+                      // Botostrap Tootltips
+                      $('[data-toggle="tooltip"]').tooltip();
+
+                      // Bootstrap Popovers
+                      $('[data-toggle="popover"]').popover();
+                    });
+                  },
+
+                  components: {}
+                }
+              });
+
+              $.HSCore.init();
+            </code>
+          </pre>
+
+          <!-- Heading -->
+          <h3 id="essentials-of-hscore-objects" class="hs-docs-heading">
+            Essentials of HS data-attributes <a class="anchorjs-link" href="#essentials-of-hscore-objects" aria-label="Anchor" data-anchorjs-icon="#"></a>
+          </h3>
+          <!-- End Heading -->
+
+          <p><code>data-hs-*-options</code> - Using the date-attribute, you can completely specify the settings for all plug-in parameters (except for functions) that are in the official documentation. Special cases will be described in the documentation of the corresponding wrappers/plugins. <code>*-</code> name of the wrapper/plugin.</p>
+
+          <p>Parameter names must be enclosed in double quotation marks <code>""</code>. <code>"param": ...</code></p>
+
+          <p>
+            For strings, quotation marks are required.
+            <code>"stringParam": "Test string",</code>
+            <code>"hexParam": "#ff0000"</code>
+          </p>
+
+          <p>For numbers, quotation marks are optional. <code>"intParam": 10</code></p>
+
+          <p>For boolean values, quotation marks can lead to not obvious consequences (due to implicit type conversion). It is recommended that you specify Boolean values without quotation marks. <code>"boolParam": true</code></p>
+
+          <p>For arrays and objects - quotation marks can lead to errors, this does not apply to elements of arrays and objects, which can be simple types (see the description for simple types above).</p>
+
+          <pre class="rounded">
+            <code class="language-html" data-lang="html">
+              "arrayParam": [1, "Test string", "#ff0000", false, 5],
+              "objectParam": {
+                "intParam": 1,
+                "stringParam": "Test string",
+                "hexParam": "#ff0000",
+                "boolParam": false,
+                "intParam2": 5
+              }
+            </code>
+          </pre>
+
+          <!-- Heading -->
+          <h3 id="advantages" class="hs-docs-heading">
+            Advantages <a class="anchorjs-link" href="#advantages" aria-label="Anchor" data-anchorjs-icon="#"></a>
+          </h3>
+          <!-- End Heading -->
+
+          <ul>
+            <li>Avoiding the probabilities of conflicts between Front codes and third party plugins (libraries).</li>
+            <li>Intuitive clear architecture.</li>
+            <li>Everything is structured, each component in its own file and in its component in the main object.</li>
+            <li>The ability of extending functionality without affecting the behavior of the core object and not changing the existing functionality.</li>
+            <li>Creation of wrapper components simply solves complicated initializations structures for the users.</li>
+            <li>Very easy access to any starters components and core settings from anywhere in the template.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Go to Top -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JSFront -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+
+    $(window).on('load', function () {
+      // INITIALIZATION OF AUTOCOMPLET
+      // =======================================================
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

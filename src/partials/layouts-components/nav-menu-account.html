@@ -1,0 +1,82 @@
+<h6 class="text-cap small">Account</h6>
+
+<!-- List -->
+<ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-overview.html'){active}" href="account-overview.html">
+      <i class="fas fa-id-card nav-icon"></i> Personal info
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-login-and-security.html'){active}" href="account-login-and-security.html">
+      <i class="fas fa-shield-alt nav-icon"></i> Login &amp; security
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-notifications.html'){active}" href="account-notifications.html">
+      <i class="fas fa-bell nav-icon"></i> Notifications
+      <span class="badge badge-soft-dark badge-pill nav-link-badge">1</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-preferences.html'){active}" href="account-preferences.html">
+      <i class="fas fa-sliders-h nav-icon"></i> Preferences
+    </a>
+  </li>
+</ul>
+<!-- End List -->
+
+<h6 class="text-cap small">Shopping</h6>
+
+<!-- List -->
+<ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2 mb-4">
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-orders.html'){active}" href="account-orders.html">
+      <i class="fas fa-shopping-basket nav-icon"></i> Your orders
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-wishlist.html'){active}" href="account-wishlist.html">
+      <i class="fas fa-heart nav-icon"></i> Wishlist
+      <span class="badge badge-soft-dark badge-pill nav-link-badge">2</span>
+    </a>
+  </li>
+</ul>
+<!-- End List -->
+
+<h6 class="text-cap small">Billing</h6>
+
+<!-- List -->
+<ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2">
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-billing.html'){active}" href="account-billing.html">
+      <i class="fas fa-credit-card nav-icon"></i> Plans &amp; payment
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-address.html'){active}" href="account-address.html">
+      <i class="fas fa-map-marker-alt nav-icon"></i> Address
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link @@if(link=='account-teams.html'){active}" href="account-teams.html">
+      <i class="fas fa-users nav-icon"></i> Teams
+      <span class="badge badge-soft-dark badge-pill nav-link-badge">+2 new users</span>
+    </a>
+  </li>
+</ul>
+<!-- End List -->
+
+<div class="d-lg-none">
+  <div class="dropdown-divider"></div>
+
+  <!-- List -->
+  <ul class="nav nav-sub nav-sm nav-tabs nav-list-y-2">
+    <li class="nav-item">
+      <a class="nav-link text-primary" href="#">
+        <i class="fas fa-sign-out-alt nav-icon"></i> Log out
+      </a>
+    </li>
+  </ul>
+  <!-- End List -->
+</div>

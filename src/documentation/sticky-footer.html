@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Sticky Footer - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/jquery-ui-dist/jquery-ui.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        @@include('@@autopath/partials/documentation/header.html')
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-top-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="@@autopath/assets/json/docs-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          @@include('@@autopath/partials/documentation/sidebar.html', {"link": "sticky-footer.html"})
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-top-1 space-bottom-2">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1>Sticky Footer</h1>
+            <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
+            <a href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/" target="_blank">Bootstrap Sticky footer documentation <i class="fas fa-external-link-alt fa-xs"></i></a>
+          </div>
+
+          <div id="example" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Example <a class="anchorjs-link" href="#example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <pre class="rounded">
+              <code class="language-html" data-lang="html">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en" class="h-100"&gt;
+                &lt;head&gt;
+                  &lt;!-- Title --&gt;
+                  &lt;title&gt;Sticky Footer | Front - Responsive Website Template&lt;/title&gt;
+
+                  &lt;!-- Required Meta Tags Always Come First --&gt;
+                  &lt;meta charset="utf-8"&gt;
+                  &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+
+                  &lt;!-- Favicon --&gt;
+                  &lt;link rel="shortcut icon" href="@@autopath/favicon.ico"&gt;
+
+                  &lt;!-- Font --&gt;
+                  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet"&gt;
+
+                  &lt;!-- CSS Front Template --&gt;
+                  &lt;link rel="stylesheet" href="./assets/css/theme.css"&gt;
+                &lt;/head&gt;
+                &lt;body class="d-flex flex-column h-100"&gt;
+                  &lt;!-- ========== MAIN ========== --&gt;
+                  &lt;main id="content" role="main" class="flex-shrink-0"&gt;
+                    &lt;div class="container"&gt;
+                      &lt;h1 class="mt-5"&gt;Sticky footer&lt;/h1&gt;
+                      &lt;p class="lead"&gt;Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/main&gt;
+                  &lt;!-- ========== END MAIN ========== --&gt;
+
+                  &lt;!-- ========== FOOTER ========== --&gt;
+                  &lt;footer class="bg-light mt-auto py-3"&gt;
+                    &lt;div class="container"&gt;
+                      &lt;span class="text-muted"&gt;Place sticky footer content here.&lt;/span&gt;
+                    &lt;/div&gt;
+                  &lt;/footer&gt;
+                  &lt;!-- ========== END FOOTER ========== --&gt;
+
+                  &lt;!-- JS Global Compulsory --&gt;
+                  &lt;script src="./node_modules/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+                  &lt;script src="./node_modules/jquery-migrate/dist/jquery-migrate.min.js"&gt;&lt;/script&gt;
+                  &lt;script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+
+                  &lt;!-- JS Front --&gt;
+                  &lt;script src="./assets/js/hs.core.js"&gt;&lt;/script&gt;
+
+                  &lt;!-- IE Support --&gt;
+                  &lt;script&gt;
+                    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('&lt;script src="./node_modules/babel-polyfill/dist/polyfill.js"&gt;&lt;\/script&gt;');
+                  &lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Go to Top -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-scroll-to-in-overflowed-container/dist/hs-scroll-to-in-overflowed-container.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JSFront -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+
+
+      // INITIALIZATION OF SCROLL TO IN OVERFLOWED CONTAINER
+      // =======================================================
+      var scrollToInOverflowedContainerNav = new HSScrollToInOverflowedContainer($('#sidebarNav'), {
+        targetEl: "#sidebarNav .hs-sidebar-link.active"
+      }).init();
+    });
+
+    $(window).on('load', function () {
+      // INITIALIZATION OF AUTOCOMPLET
+      // =======================================================
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

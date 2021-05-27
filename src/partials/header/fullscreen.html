@@ -1,0 +1,353 @@
+<header id="header" class="header header-bg-transparent header-abs-top py-3">
+  <div class="header-section navbar-expand">
+    <div id="logoAndNav" class="container px-3">
+      <!-- Nav -->
+      <nav class="navbar">
+        <!-- Logo -->
+        <a class="navbar-brand" href="@@autopath/index.html" aria-label="Front">
+          <img src="@@autopath/assets/svg/logos/logo-white.svg" alt="Logo">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Fullscreen Toggle Button -->
+        <button id="headerToggler" type="button" class="navbar-toggler fullscreen-toggler btn btn-icon btn-sm btn-soft-light rounded-circle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                data-toggle="button"
+                aria-controls="headerFullscreen"
+                data-target="#headerFullscreen">
+            <span class="navbar-toggler-default">
+              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+              </svg>
+            </span>
+          <span class="navbar-toggler-toggled">
+              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+              </svg>
+            </span>
+        </button>
+        <!-- End Fullscreen Toggle Button -->
+      </nav>
+      <!-- End Nav -->
+
+      <!-- Navigation -->
+      <div id="headerFullscreen" class="fullscreen"
+           data-hs-header-fullscreen-options='{
+               "overlayClass": "fullscreen-overlay"
+             }'
+           aria-labelledby="headerToggler">
+        <div class="fullscreen-container">
+          <div class="container">
+            <div class="fullscreen-body">
+              <div class="row justify-content-md-between align-items-center">
+                <div id="fullscreenWrapper" class="col-md-6">
+                  <!-- List -->
+                  <ul id="fullscreenNav" class="fullscreen-nav">
+                    <!-- Home Section -->
+                    <li class="u-has-submenu fullscreen-submenu">
+                      <a class="fullscreen-nav-link" href="#homeCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="homeCollapse">
+                        Home
+                      </a>
+
+                      <ul id="homeCollapse" class="collapse fullscreen-nav-list" data-parent="#fullscreenWrapper">
+                        <!-- Home - Classic -->
+                        <li class="u-has-submenu fullscreen-submenu">
+                          <a class="fullscreen-submenu-nav-link" href="#homeClassicSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="homeClassicSubNavCollapse">
+                            Classic
+                          </a>
+
+                          <ul id="homeClassicSubNavCollapse" class="collapse fullscreen-submenu-list" data-parent="#fullscreenNav">
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/index.html">Agency</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-classic-analytics.html">Analytics</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-classic-studio.html">Studio</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-classic-marketing.html">Marketing</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-classic-advertisement.html" target="_blank">Advertisement</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-classic-consulting.html">Consulting</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-classic-portfolio.html">Portfolio</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-classic-software.html">Software</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-classic-business.html">Business</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Home - Classic -->
+
+                        <!-- Home - App -->
+                        <li class="u-has-submenu fullscreen-submenu">
+                          <a class="fullscreen-submenu-nav-link" href="#homeAppSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="homeAppSubNavCollapse">
+                            App
+                          </a>
+
+                          <ul id="homeAppSubNavCollapse" class="collapse fullscreen-submenu-list" data-parent="#fullscreenNav">
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-app-ui-kit.html">UI Kit</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-app-saas.html">App SaaS</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-app-workflow.html">App Workflow</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-app-payment.html">App Payment</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-app-tool.html">App Tool</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Home - App -->
+
+                        <!-- Home - Onepages -->
+                        <li class="u-has-submenu fullscreen-submenu">
+                          <a class="fullscreen-submenu-nav-link" href="#homeOnepagesSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="homeOnepagesSubNavCollapse">
+                            Onepages
+                          </a>
+
+                          <ul id="homeOnepagesSubNavCollapse" class="collapse fullscreen-submenu-list" data-parent="#fullscreenNav">
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-onepage-corporate.html">Corporate</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/landing-onepage-saas.html">SaaS</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Home - Onepages -->
+                      </ul>
+                    </li>
+                    <!-- End Home Section -->
+
+                    <!-- Page Section -->
+                    <li class="u-has-submenu fullscreen-submenu">
+                      <a class="fullscreen-nav-link" href="#pagesCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="pagesCollapse">
+                        Pages
+                      </a>
+
+                      <ul id="pagesCollapse" class="collapse fullscreen-nav-list"
+                          data-parent="#fullscreenWrapper">
+                        <!-- Page - Account -->
+                        <li class="u-has-submenu fullscreen-submenu">
+                          <a class="fullscreen-submenu-nav-link" role="button" href="#pagesAccountCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="pagesAccountCollapse">
+                            Account
+                          </a>
+
+                          <ul id="pagesAccountCollapse" class="collapse fullscreen-submenu-list" data-parent="#fullscreenNav">
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/account-overview.html">Personal info</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/account-login-and-security.html">Login &amp; security</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/account-notifications.html">Notifications</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/account-preferences.html">Preferences</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/account-orders.html">Orders</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/account-wishlist.html">Wishlist</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/account-billing.html">Plans &amp; payment</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/account-address.html">Address</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/account-teams.html">Teams</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Page - Account -->
+
+                        <!-- Page - Company -->
+                        <li class="u-has-submenu fullscreen-submenu">
+                          <a class="fullscreen-submenu-nav-link" role="button" href="#pagesCompanyCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="pagesCompanyCollapse">
+                            Company
+                          </a>
+
+                          <ul id="pagesCompanyCollapse" class="collapse fullscreen-submenu-list" data-parent="#fullscreenNav">
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-about-agency.html">About Agency</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-services-agency.html">Services Agency</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-customers.html">Customers</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-customer-story.html">Customer story</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-careers.html">Careers</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-careers-single.html">Careers Single</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-hire-us.html">Hire Us</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Page - Company -->
+
+                        <!-- Page - Portfolio -->
+                        <li class="u-has-submenu fullscreen-submenu">
+                          <a class="fullscreen-submenu-nav-link" role="button" href="#pagesPortfolioCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="pagesPortfolioCollapse">
+                            Portfolio
+                          </a>
+
+                          <ul id="pagesPortfolioCollapse" class="collapse fullscreen-submenu-list" data-parent="#fullscreenNav">
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/portfolio-grid.html">Grid</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/portfolio-masonry.html">Masonry</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/portfolio-modern.html">Modern</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/portfolio-case-studies-branding.html">Case Studies Branding</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/portfolio-case-studies-product.html">Case Studies Product</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/portfolio-single-page-list.html">Single Page List</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/portfolio-single-page-grid.html">Single Page Grid</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/portfolio-single-page-masonry.html">Single Page Masonry</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Page - Portfolio -->
+
+                        <!-- Page - Login -->
+                        <li class="u-has-submenu fullscreen-submenu">
+                          <a class="fullscreen-submenu-nav-link" role="button" href="#pagesLoginCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="pagesLoginCollapse">
+                            Login
+                          </a>
+
+                          <ul id="pagesLoginCollapse" class="collapse fullscreen-submenu-list" data-parent="#fullscreenNav">
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-login.html">Login</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-signup.html">Signup</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-recover-account.html">Recover Account</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-login-simple.html">Login Simple</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-signup-simple.html">Signup Simple</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-recover-account-simple.html">Recover Account Simple</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Page - Login -->
+
+                        <!-- Page - Contacts -->
+                        <li class="u-has-submenu fullscreen-submenu">
+                          <a class="fullscreen-submenu-nav-link" role="button" href="#pagesContactsCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="pagesContactsCollapse">
+                            Contacts
+                          </a>
+
+                          <ul id="pagesContactsCollapse" class="collapse fullscreen-submenu-list" data-parent="#fullscreenNav">
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-contacts-agency.html">Contacts Agency</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-contacts-start-up.html">Contacts Start-Up</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Page - Contacts -->
+
+                        <!-- Page - Utilities -->
+                        <li class="u-has-submenu fullscreen-submenu">
+                          <a class="fullscreen-submenu-nav-link" role="button" href="#pagesUtilitiesCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="pagesUtilitiesCollapse">
+                            Utilities
+                          </a>
+
+                          <ul id="pagesUtilitiesCollapse" class="collapse fullscreen-submenu-list" data-parent="#fullscreenNav">
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-pricing.html">Pricing</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-faq.html">FAQ</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-terms.html">Terms &amp; Conditions</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-privacy.html">Privacy &amp; Policy</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Page - Utilities -->
+
+                        <!-- Page - Specialty -->
+                        <li class="u-has-submenu fullscreen-submenu">
+                          <a class="fullscreen-submenu-nav-link" role="button" href="#pagesSpecialtyCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="pagesSpecialtyCollapse">
+                            Specialty
+                          </a>
+
+                          <ul id="pagesSpecialtyCollapse" class="collapse fullscreen-submenu-list" data-parent="#fullscreenNav">
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-cover-page.html">Cover Page</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-coming-soon.html">Coming Soon</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-maintenance-mode.html">Maintenance Mode</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-status.html">Status</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-invoice.html">Invoice</a></li>
+                            <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/page-error-404.html">Error 404</a></li>
+                          </ul>
+                        </li>
+                        <!-- End Page - Specialty -->
+                      </ul>
+                    </li>
+                    <!-- End Page Section -->
+
+                    <!-- Blog -->
+                    <li class="u-has-submenu fullscreen-submenu">
+                      <a class="fullscreen-nav-link" href="#blogCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="blogCollapse">
+                        Blog
+                      </a>
+
+                      <ul id="blogCollapse" class="collapse fullscreen-nav-list" data-parent="#fullscreenWrapper">
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="blog-journal.html">Journal</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="blog-metro.html">Metro</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="blog-newsroom.html">Newsroom</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="blog-profile.html">Blog Profile</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="blog-single-article.html">Single Article</a></li>
+                      </ul>
+                    </li>
+                    <!-- End Blog -->
+
+                    <!-- Shop Section -->
+                    <li class="u-has-submenu fullscreen-submenu">
+                      <a class="fullscreen-nav-link" href="#shopCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="shopCollapse">
+                        Shop
+                      </a>
+
+                      <ul id="shopCollapse" class="collapse fullscreen-nav-list" data-parent="#fullscreenWrapper">
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/shop-classic.html">Classic</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/shop-categories.html">Categories</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/shop-categories-sidebar.html">Categories Sidebar</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/shop-products-grid.html">Products Grid</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/shop-products-list.html">Products List</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/shop-single-product.html">Single Product</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/shop-empty-cart.html">Empty Cart</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/shop-cart.html">Cart</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/shop-checkout.html">Checkout</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/shop-order-completed.html">Order Completed</a></li>
+                      </ul>
+                    </li>
+                    <!-- End Shop Section -->
+
+                    <!-- Demos -->
+                    <li class="u-has-submenu fullscreen-submenu">
+                      <a class="fullscreen-nav-link" href="#demosCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="demosCollapse">
+                        Demos
+                      </a>
+
+                      <ul id="demosCollapse" class="collapse fullscreen-nav-list" data-parent="#fullscreenWrapper">
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/demo-course/index.html">Course</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/demo-app-marketplace/index.html">App Marketplace</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/demo-help-desk/index.html">Help Desk</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/demo-real-estate/index.html">Real Estate</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/demo-jobs/index.html">Jobs</a></li>
+                      </ul>
+                    </li>
+                    <!-- End Demos -->
+
+                    <!-- Docs Section -->
+                    <li class="u-has-submenu fullscreen-submenu">
+                      <a class="fullscreen-nav-link" href="#docsCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="docsCollapse">
+                        Docs
+                      </a>
+
+                      <ul id="docsCollapse" class="collapse fullscreen-nav-list" data-parent="#fullscreenWrapper">
+                        <li><a class="nav-link fullscreen-submenu-list-link" href="@@autopath/documentation/index.html">Documentation</a></li>
+                        <li><a class="nav-link fullscreen-submenu-list-link disabled" href="@@autopath/snippets/index.html">Snippets</a></li>
+                      </ul>
+                    </li>
+                    <!-- End Docs Section -->
+                  </ul>
+                  <!-- End List -->
+                </div>
+
+                <div class="col-md-4 d-none d-md-inline-block">
+                  <!-- Address -->
+                  <div class="mb-7">
+                    <span class="d-block text-white font-weight-bold mb-3">Address</span>
+
+                    <address class="mb-0">
+                      <span class="d-block text-white-70 mb-1">+1 (062) 109-9222</span>
+                      <span class="d-block text-white-70 mb-1">hello@example.com</span>
+                      <span class="d-block text-white-70 mb-1">153 Williamson Plaza, Maggieberg, MT 09514</span>
+                    </address>
+                  </div>
+                  <!-- End Address -->
+
+                  <!-- Social Networks -->
+                  <span class="d-block text-white font-weight-bold mb-3">Social</span>
+
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                      <a class="btn btn-xs btn-icon btn-soft-light rounded-circle" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn btn-xs btn-icon btn-soft-light rounded-circle" href="#">
+                        <i class="fab fa-google"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn btn-xs btn-icon btn-soft-light rounded-circle" href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn btn-xs btn-icon btn-soft-light rounded-circle" href="#">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- End Social Networks -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Navigation -->
+    </div>
+  </div>
+</header>

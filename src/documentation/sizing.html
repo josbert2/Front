@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Sizing - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/jquery-ui-dist/jquery-ui.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="@@autopath/assets/css/docs.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        @@include('@@autopath/partials/documentation/header.html')
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-top-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="@@autopath/assets/json/docs-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          @@include('@@autopath/partials/documentation/sidebar.html', {"link": "sizing.html"})
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-top-1 space-bottom-2">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1>Sizing</h1>
+            <p class="lead">Easily make an element as wide or as tall (relative to its parent) with our width and height utilities.</p>
+          </div>
+
+          <div id="min-width-utility-classes" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Min width utility classes <a class="anchorjs-link" href="#min-width-utility-classes" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <pre class="rounded">
+              <code class="language-html" data-lang="html">
+                &lt;div class="min-w-3rem"&gt;.min-w-3rem&lt;/div&gt;
+                &lt;div class="min-w-4rem"&gt;.min-w-4rem&lt;/div&gt;
+                &lt;div class="min-w-8rem"&gt;.min-w-8rem&lt;/div&gt;
+                &lt;div class="min-w-21rem"&gt;.min-w-21rem&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div id="max-width-utility-classes" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Max width utility classes <a class="anchorjs-link" href="#max-width-utility-classes" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <pre class="rounded">
+              <code class="language-html" data-lang="html">
+                &lt;div class="max-w-3rem"&gt;.max-w-3rem&lt;/div&gt;
+                &lt;div class="max-w-4rem"&gt;.max-w-4rem&lt;/div&gt;
+                &lt;div class="max-w-5rem"&gt;.max-w-5rem&lt;/div&gt;
+                &lt;div class="max-w-6rem"&gt;.max-w-6rem&lt;/div&gt;
+                &lt;div class="max-w-7rem"&gt;.max-w-7rem&lt;/div&gt;
+                &lt;div class="max-w-8rem"&gt;.max-w-8rem&lt;/div&gt;
+                &lt;div class="max-w-9rem"&gt;.max-w-9rem&lt;/div&gt;
+                &lt;div class="max-w-10rem"&gt;.max-w-10rem&lt;/div&gt;
+                &lt;div class="max-w-11rem"&gt;.max-w-11rem&lt;/div&gt;
+                &lt;div class="max-w-13rem"&gt;.max-w-13rem&lt;/div&gt;
+                &lt;div class="max-w-15rem"&gt;.max-w-15rem&lt;/div&gt;
+                &lt;div class="max-w-19rem"&gt;.max-w-19rem&lt;/div&gt;
+                &lt;div class="max-w-23rem"&gt;.max-w-23rem&lt;/div&gt;
+                &lt;div class="max-w-27rem"&gt;.max-w-27rem&lt;/div&gt;
+                &lt;div class="max-w-33rem"&gt;.max-w-33rem&lt;/div&gt;
+                &lt;div class="max-w-35rem"&gt;.max-w-35rem&lt;/div&gt;
+                &lt;div class="max-w-40rem"&gt;.max-w-40rem&lt;/div&gt;
+                &lt;div class="max-w-50rem"&gt;.max-w-50rem&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div id="height-utility-classes" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Height utility classes <a class="anchorjs-link" href="#height-utility-classes" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <pre class="rounded">
+              <code class="language-html" data-lang="html">
+                &lt;div class="h-4rem"&gt;.h-4rem&lt;/div&gt;
+                &lt;div class="h-250rem"&gt;.h-250rem&lt;/div&gt;
+                &lt;div class="h-380rem"&gt;.h-380rem&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div id="min-height-classes" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Min height classes <a class="anchorjs-link" href="#min-height-classes" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <pre class="rounded">
+              <code class="language-html" data-lang="html">
+                &lt;div class="min-h-270rem"&gt;.min-h-270rem&lt;/div&gt;
+                &lt;div class="min-h-300rem"&gt;.min-h-300rem&lt;/div&gt;
+                &lt;div class="min-h-380rem"&gt;.min-h-380rem&lt;/div&gt;
+                &lt;div class="min-h-450rem"&gt;.min-h-450rem&lt;/div&gt;
+                &lt;div class="min-h-500rem"&gt;.min-h-500rem&lt;/div&gt;
+                &lt;div class="min-h-620rem"&gt;.min-h-620rem&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div id="height-responsive-classes" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Height responsive classes <a class="anchorjs-link" href="#height-classes" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <div class="hs-docs-content-divider">
+              <p>Medium devices (tablets, 768px and up)</p>
+
+              <pre class="rounded">
+                <code class="language-html" data-lang="html">
+                  &lt;div class="vh-md-30"&gt;.vh-md-30&lt;/div&gt;
+                  &lt;div class="vh-md-70"&gt;.vh-md-70&lt;/div&gt;
+                  &lt;div class="min-vh-md-100"&gt;.min-vh-md-100&lt;/div&gt;
+                </code>
+              </pre>
+
+              <p>Large devices (desktops, 992px and up)</p>
+
+              <pre class="rounded">
+                <code class="language-html" data-lang="html">
+                  &lt;div class="vh-lg-100"&gt;.vh-lg-100&lt;/div&gt;
+                  &lt;div class="min-vh-lg-100"&gt;.min-vh-lg-100&lt;/div&gt;
+                  &lt;div class="min-h-lg-600rem"&gt;.min-h-lg-600rem&lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <blockquote class="callout callout-danger">
+            <p class="callout-title">Important</p>
+            <p>Front does not include all classes, but includes only used classes to reduce the size of CSS files. However, you can add more sizes by adding entries to the Sass map variable via: <code>assets/scss/front/utilities/_sizing.scss</code>.</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Go to Top -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-scroll-to-in-overflowed-container/dist/hs-scroll-to-in-overflowed-container.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JSFront -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {      
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+      
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+
+      
+      // INITIALIZATION OF SCROLL TO IN OVERFLOWED CONTAINER
+      // =======================================================
+      var scrollToInOverflowedContainerNav = new HSScrollToInOverflowedContainer($('#sidebarNav'), {
+        targetEl: "#sidebarNav .hs-sidebar-link.active"
+      }).init();
+    });
+
+    $(window).on('load', function () {
+      
+      // INITIALIZATION OF AUTOCOMPLET
+      // =======================================================
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

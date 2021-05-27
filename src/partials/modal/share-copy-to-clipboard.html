@@ -1,0 +1,66 @@
+<div class="modal fade" id="copyToClipboardModal" tabindex="-1" role="dialog" aria-labelledby="copyToClipboardModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <!-- Header -->
+      <div class="modal-header">
+        <h4 id="copyToClipboardModalTitle" class="mb-0">Share this course</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg aria-hidden="true" class="mb-0" width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+          </svg>
+        </button>
+      </div>
+      <!-- End Header -->
+
+      <!-- Body -->
+      <div class="modal-body">
+        <form>
+          <!-- Clipboard -->
+          <div class="input-group mb-4">
+            <input id="copyToClipboard" type="text" class="form-control" value="http://www.front-course.com/share/3874/">
+            <div class="input-group-append">
+              <a class="js-clipboard input-group-text" href="javascript:;"
+                 data-hs-clipboard-options='{
+                   "contentTarget": "#copyToClipboard",
+                   "successText": "Copied!",
+                   "container": "#copyToClipboardModal"
+                 }'>Copy</a>
+            </div>
+          </div>
+          <!-- End Clipboard -->
+        </form>
+
+        <!-- Social Networks -->
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a class="btn btn-xs btn-icon btn-outline-secondary" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn btn-xs btn-icon btn-outline-secondary" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn btn-xs btn-icon btn-outline-secondary" href="#">
+              <i class="fab fa-medium-m"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn btn-xs btn-icon btn-outline-secondary" href="#">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn btn-xs btn-icon btn-outline-secondary" href="#">
+              <i class="fab fa-slack"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- End Social Networks -->
+      </div>
+      <!-- End Body -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>BIO - Snippets | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.googleFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/jquery-ui-dist/jquery-ui.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="@@autopath/assets/css/snippets.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        @@include('@@autopath/partials/snippets/header.html')
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="@@autopath/assets/json/snippets-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          @@include("@@autopath/partials/snippets/sidebar.html", {
+            "category": "",
+            "link": "bio.html"
+          })
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-1">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1>BIO</h1>
+          </div>
+
+          <!-- Component Block -->
+          <div id="component-1" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Component #1 <a class="anchorjs-link" href="#component-1" data-anchorjs-icon="#"></a></h2>
+            <p>Below is a <em>static</em> sidebar example without <code class="hilight-rouge">hs-sticky-block.js</code> plugin. But the plugin's code included in the code snippets.</p>
+
+            <!-- Tab Wrapper -->
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1" data-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1" data-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-js-tab-1" data-toggle="pill" href="#pills-js-1" role="tab" aria-controls="pills-js-1" aria-selected="false">JS</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                  <!-- Description Section -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <div class="mb-8">
+                          <div class="mb-3">
+                            <h3>Bio</h3>
+                          </div>
+
+                          <p>A Frontend developer, and UI/UX Designer offering over 8 years of success in various leadership roles in the areas of Web design and development and customer support. I love coding and problem solving. Love working on both server and client side code. I like to get to know my clients closely to facilitate better communication.</p>
+
+                          <ul class="pl-4 mb-4">
+                            <li>Authorized to work in the UK for any employer</li>
+                            <li>Willing to relocate to anywhere</li>
+                          </ul>
+
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <div class="mb-4">
+                                <h5>Desired job title</h5>
+                                
+                                <p>UI Designer/Developer</p>
+                              </div>
+                              
+                              <div class="mb-4">
+                                <h5>Desired job types</h5>
+
+                                <ul class="list-unstyled">
+                                  <li>Full time</li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="mb-4">
+                                <h5>Desired work schedule</h5>
+
+                                <ul class="list-unstyled">
+                                  <li>Monday to Friday</li>
+                                </ul>
+                              </div>
+
+                              <div class="mb-4">
+                                <h5>Desired salary</h5>
+
+                                <ul class="list-unstyled">
+                                  <li>$90k per year</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Row -->
+                        </div>
+
+                        <!-- Sticky Block End Point -->
+                        <div id="stickyBlockEndPoint"></div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div id="stickyBlockStartPoint" class="pl-lg-4">
+                          <!-- Card -->
+                          <div class="js-sticky-blocks card card-bordered"
+                               data-hs-sticky-block-options='{
+                                 "parentSelector": "#stickyBlockStartPoint",
+                                 "breakpoint": "lg",
+                                 "startPoint": "#stickyBlockStartPoint",
+                                 "endPoint": "#stickyBlockEndPoint",
+                                 "stickyOffsetTop": 20,
+                                 "stickyOffsetBottom": 20
+                               }'>
+                            <div class="card-body p-5">
+                              <div class="mb-5">
+                                <h3>Search millions of resumes across your industry and location.</h3>
+                              </div>
+                              <a class="btn btn-sm btn-block btn-soft-dark" href="#">Select a subscription</a>
+                              <img class="card-img-bottom mt-7" src="@@autopath/assets/svg/illustrations/discussion-scene.svg" alt="Image Description">
+                            </div>
+                          </div>
+                          <!-- End Card -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Description Section -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+                      &lt;!-- Description Section --&gt;
+                      &lt;div class="container space-2"&gt;
+                        &lt;div class="row"&gt;
+                          &lt;div class="col-lg-8"&gt;
+                            &lt;div class="mb-8"&gt;
+                              &lt;div class="mb-3"&gt;
+                                &lt;h3&gt;Bio&lt;/h3&gt;
+                              &lt;/div&gt;
+
+                              &lt;p&gt;A Frontend developer, and UI/UX Designer offering over 8 years of success in various leadership roles in the areas of Web design and development and customer support. I love coding and problem solving. Love working on both server and client side code. I like to get to know my clients closely to facilitate better communication.&lt;/p&gt;
+
+                              &lt;ul class="pl-4 mb-4"&gt;
+                                &lt;li&gt;Authorized to work in the UK for any employer&lt;/li&gt;
+                                &lt;li&gt;Willing to relocate to anywhere&lt;/li&gt;
+                              &lt;/ul&gt;
+
+                              &lt;div class="row"&gt;
+                                &lt;div class="col-sm-6"&gt;
+                                  &lt;div class="mb-4"&gt;
+                                    &lt;h5&gt;Desired job title&lt;/h5&gt;
+                                    
+                                    &lt;p&gt;UI Designer/Developer&lt;/p&gt;
+                                  &lt;/div&gt;
+                                  
+                                  &lt;div class="mb-4"&gt;
+                                    &lt;h5&gt;Desired job types&lt;/h5&gt;
+
+                                    &lt;ul class="list-unstyled"&gt;
+                                      &lt;li&gt;Full time&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="col-sm-6"&gt;
+                                  &lt;div class="mb-4"&gt;
+                                    &lt;h5&gt;Desired work schedule&lt;/h5&gt;
+
+                                    &lt;ul class="list-unstyled"&gt;
+                                      &lt;li&gt;Monday to Friday&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                  &lt;/div&gt;
+
+                                  &lt;div class="mb-4"&gt;
+                                    &lt;h5&gt;Desired salary&lt;/h5&gt;
+
+                                    &lt;ul class="list-unstyled"&gt;
+                                      &lt;li&gt;$90k per year&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;!-- End Row --&gt;
+                            &lt;/div&gt;
+
+                            &lt;!-- Sticky Block End Point --&gt;
+                            &lt;div id="stickyBlockEndPoint"&gt;&lt;/div&gt;
+                          &lt;/div&gt;
+
+                          &lt;div class="col-lg-4"&gt;
+                            &lt;div id="stickyBlockStartPoint" class="pl-lg-4"&gt;
+                              &lt;!-- Card --&gt;
+                              &lt;div class="js-sticky-blocks card card-bordered"
+                                   data-hs-sticky-block-options='{
+                                     "parentSelector": "#stickyBlockStartPoint",
+                                     "breakpoint": "lg",
+                                     "startPoint": "#stickyBlockStartPoint",
+                                     "endPoint": "#stickyBlockEndPoint",
+                                     "stickyOffsetTop": 20,
+                                     "stickyOffsetBottom": 20
+                                   }'&gt;
+                                &lt;div class="card-body p-5"&gt;
+                                  &lt;div class="mb-5"&gt;
+                                    &lt;h3&gt;Search millions of resumes across your industry and location.&lt;/h3&gt;
+                                  &lt;/div&gt;
+                                  &lt;a class="btn btn-sm btn-block btn-soft-dark" href="#"&gt;Select a subscription&lt;/a&gt;
+                                  &lt;img class="card-img-bottom mt-7" src="@@autopath/assets/svg/illustrations/discussion-scene.svg" alt="Image Description"&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;!-- End Card --&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- Description Section --&gt;
+                    </code>
+                  </pre>
+                </div>
+                <div class="tab-pane fade" id="pills-js-1" role="tabpanel" aria-labelledby="pills-js-tab-1">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+                      &lt;!-- JS Implementing Plugins --&gt;
+                      &lt;script src="./assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"&gt;&lt;/script&gt;
+
+                      &lt;!-- JS Plugins Init. --&gt;
+                      &lt;script&gt;
+                        $(document).on('ready', function () {
+                          // INITIALIZATION OF STICKY BLOCKS
+                          // =======================================================
+                          $('.js-sticky-block').each(function () {
+                            var stickyBlock = new HSStickyBlock($(this)).init();
+                          });
+                        });
+                      &lt;/script&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <!-- End Tab Wrapper -->
+          </div>
+          <!-- End Component Block -->
+
+          <!-- Component Block -->
+          <div id="component-2" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Component #2 <a class="anchorjs-link" href="#component-2" data-anchorjs-icon="#"></a></h2>
+
+            <!-- Tab Wrapper -->
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-css-tab-2" data-toggle="pill" href="#pills-css-2" role="tab" aria-controls="pills-css-2" aria-selected="false">CSS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-js-tab-2" data-toggle="pill" href="#pills-js-2" role="tab" aria-controls="pills-js-2" aria-selected="false">JS</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <!-- About Section -->
+                  <div class="container">
+                    <h3>About the company</h3>
+
+                    <div class="row mb-5">
+                      <div class="col-md-3 order-md-2 mb-3 mb-md-0">
+                        <div class="pl-md-4">
+                          <ul class="list-unstyled list-article">
+                            <li>
+                              <span class="h5 d-block">Founded</span>
+                              <span class="d-block font-size-1">2009</span>
+                            </li>
+
+                            <li>
+                              <span class="h5 d-block">Company size</span>
+                              <span class="d-block font-size-1">150 - 300</span>
+                            </li>
+
+                            <li>
+                              <span class="h5 d-block">Avg. Salary</span>
+                              <span class="d-block font-size-1">$25 - $45</span>
+                            </li>
+
+                            <li>
+                              <span class="h5 d-block">Industry</span>
+                              <span class="d-block font-size-1">Information Technology</span>
+                            </li>
+
+                            <li>
+                              <span class="h5 d-block">Links</span>
+                              
+                              <ul class="list-inline">
+                                <li class="list-inline-item">
+                                  <a class="icon icon-xs icon-soft-dark icon-circle" href="#" data-toggle="tooltip" data-placement="top" title="Capsule on Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                  </a>
+                                </li>
+                                
+                                <li class="list-inline-item">
+                                  <a class="icon icon-xs icon-soft-dark icon-circle" href="#" data-toggle="tooltip" data-placement="top" title="Capsule on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                  </a>
+                                </li>
+                                
+                                <li class="list-inline-item">
+                                  <a class="icon icon-xs icon-soft-dark icon-circle" href="#" data-toggle="tooltip" data-placement="top" title="Capsule on Github">
+                                    <i class="fab fa-github"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-md-9">
+                        <div class="mb-5">
+                          <p>Capsule was launched in 2009 following the founders' frustration with existing CRM services that were either overly simplistic or far too complex for most businesses. We believe the value of a modern CRM lies in the ability to help businesses stay organized, know more about their customers, build strong relationships and to make the most of sales opportunities, all while minimizing user input. We built Capsule to deliver on these values and today Capsule is used by thousands of businesses of all sizes all over the world.</p>
+
+                          <div class="collapse" id="collapseLinkDescription">
+                            <p>We're based in Manchester, United Kingdom, a city with a creative heart that was founded on science and industry and the birthplace of the modern computer.</p>
+                          </div>
+
+                          <a class="link-collapse" data-toggle="collapse" href="#collapseLinkDescription" role="button" aria-expanded="false" aria-controls="collapseLinkDescription">
+                            <span class="link-collapse-default">Read more <i class="fas fa-angle-down fa-sm ml-1"></i></span>
+                            <span class="link-collapse-active">Read less <i class="fas fa-angle-up fa-sm ml-1"></i></span>
+                          </a>
+                        </div>
+
+                        <div id="fancyboxGallery">
+                          <div class="row mx-n2">
+                            <div class="col-4 col-sm px-2 mb-3 mb-sm-0">
+                              <a class="js-fancybox media-viewer" href="javascript:;"
+                                 data-hs-fancybox-options='{
+                                   "selector": "#fancyboxGallery .js-fancybox",
+                                   "speed": 700
+                                 }'
+                                 data-src="@@autopath/assets/img/900x900/img1.jpg"
+                                 data-caption="Front in frames - image #01">
+                                <img class="img-fluid rounded" src="@@autopath/assets/img/900x900/img1.jpg" alt="Image Description">
+
+                                <span class="media-viewer-container">
+                                  <span class="media-viewer-icon">
+                                    <i class="fas fa-plus media-viewer-icon-inner"></i>
+                                  </span>
+                                </span>
+                              </a>
+                            </div>
+
+                            <div class="col-4 col-sm px-2 mb-3 mb-sm-0">
+                              <a class="js-fancybox media-viewer" href="javascript:;"
+                                 data-hs-fancybox-options='{
+                                   "selector": "#fancyboxGallery .js-fancybox",
+                                   "speed": 700
+                                 }'
+                                 data-src="@@autopath/assets/img/900x900/img8.jpg"
+                                 data-caption="Front in frames - image #02">
+                                <img class="img-fluid rounded" src="@@autopath/assets/img/900x900/img8.jpg" alt="Image Description">
+
+                                <span class="media-viewer-container">
+                                  <span class="media-viewer-icon">
+                                    <i class="fas fa-plus media-viewer-icon-inner"></i>
+                                  </span>
+                                </span>
+                              </a>
+                            </div>
+
+                            <div class="col-4 col-sm px-2 mb-3 mb-sm-0">
+                              <a class="js-fancybox media-viewer" href="javascript:;"
+                                 data-hs-fancybox-options='{
+                                   "selector": "#fancyboxGallery .js-fancybox",
+                                   "speed": 700
+                                 }'
+                                 data-src="@@autopath/assets/img/900x900/img7.jpg"
+                                 data-caption="Front in frames - image #03">
+                                <img class="img-fluid rounded" src="@@autopath/assets/img/900x900/img7.jpg" alt="Image Description">
+
+                                <span class="media-viewer-container">
+                                  <span class="media-viewer-icon">
+                                    <i class="fas fa-plus media-viewer-icon-inner"></i>
+                                  </span>
+                                </span>
+                              </a>
+                            </div>
+
+                            <div class="col-4 col-sm px-2 mb-3 mb-sm-0">
+                              <a class="js-fancybox media-viewer" href="javascript:;"
+                                 data-hs-fancybox-options='{
+                                   "selector": "#fancyboxGallery .js-fancybox",
+                                   "speed": 700
+                                 }'
+                                 data-src="@@autopath/assets/img/900x900/img23.jpg"
+                                 data-caption="Front in frames - image #04">
+                                <img class="img-fluid rounded" src="@@autopath/assets/img/900x900/img23.jpg" alt="Image Description">
+
+                                <span class="media-viewer-container">
+                                  <span class="media-viewer-icon">
+                                    <i class="fas fa-plus media-viewer-icon-inner"></i>
+                                  </span>
+                                </span>
+                              </a>
+                            </div>
+
+                            <div class="col-4 col-sm px-2 mb-3 mb-sm-0">
+                              <a class="js-fancybox media-viewer" href="javascript:;"
+                                 data-hs-fancybox-options='{
+                                   "selector": "#fancyboxGallery .js-fancybox",
+                                   "speed": 700
+                                 }'
+                                 data-src="@@autopath/assets/img/900x900/img9.jpg"
+                                 data-caption="Front in frames - image #05">
+                                <img class="img-fluid rounded" src="@@autopath/assets/img/900x900/img9.jpg" alt="Image Description">
+
+                                <span class="media-viewer-container">
+                                  <span class="media-viewer-icon media-viewer-icon-active">
+                                    <span class="media-viewer-icon-inner">+1</span>
+                                  </span>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+
+                          <img class="js-fancybox d-none" alt="Image Description"
+                               data-hs-fancybox-options='{
+                                 "selector": "#fancyboxGallery .js-fancybox",
+                                 "speed": 700
+                               }'
+                               data-src="@@autopath/assets/img/900x900/img2.jpg"
+                               data-caption="Front in frames - image #06">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Row -->
+                  </div>
+                  <!-- About Section -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+                      &lt;!-- About Section --&gt;
+                      &lt;div class="container"&gt;
+                        &lt;h3&gt;About the company&lt;/h3&gt;
+
+                        &lt;div class="row mb-5"&gt;
+                          &lt;div class="col-md-3 order-md-2 mb-3 mb-md-0"&gt;
+                            &lt;div class="pl-md-4"&gt;
+                              &lt;ul class="list-unstyled list-article"&gt;
+                                &lt;li&gt;
+                                  &lt;span class="h5 d-block"&gt;Founded&lt;/span&gt;
+                                  &lt;span class="d-block font-size-1"&gt;2009&lt;/span&gt;
+                                &lt;/li&gt;
+
+                                &lt;li&gt;
+                                  &lt;span class="h5 d-block"&gt;Company size&lt;/span&gt;
+                                  &lt;span class="d-block font-size-1"&gt;150 - 300&lt;/span&gt;
+                                &lt;/li&gt;
+
+                                &lt;li&gt;
+                                  &lt;span class="h5 d-block"&gt;Avg. Salary&lt;/span&gt;
+                                  &lt;span class="d-block font-size-1"&gt;$25 - $45&lt;/span&gt;
+                                &lt;/li&gt;
+
+                                &lt;li&gt;
+                                  &lt;span class="h5 d-block"&gt;Industry&lt;/span&gt;
+                                  &lt;span class="d-block font-size-1"&gt;Information Technology&lt;/span&gt;
+                                &lt;/li&gt;
+
+                                &lt;li&gt;
+                                  &lt;span class="h5 d-block"&gt;Links&lt;/span&gt;
+                                  
+                                  &lt;ul class="list-inline"&gt;
+                                    &lt;li class="list-inline-item"&gt;
+                                      &lt;a class="icon icon-xs icon-soft-dark icon-circle" href="#" data-toggle="tooltip" data-placement="top" title="Capsule on Facebook"&gt;
+                                        &lt;i class="fab fa-facebook"&gt;&lt;/i&gt;
+                                      &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    
+                                    &lt;li class="list-inline-item"&gt;
+                                      &lt;a class="icon icon-xs icon-soft-dark icon-circle" href="#" data-toggle="tooltip" data-placement="top" title="Capsule on Twitter"&gt;
+                                        &lt;i class="fab fa-twitter"&gt;&lt;/i&gt;
+                                      &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    
+                                    &lt;li class="list-inline-item"&gt;
+                                      &lt;a class="icon icon-xs icon-soft-dark icon-circle" href="#" data-toggle="tooltip" data-placement="top" title="Capsule on Github"&gt;
+                                        &lt;i class="fab fa-github"&gt;&lt;/i&gt;
+                                      &lt;/a&gt;
+                                    &lt;/li&gt;
+                                  &lt;/ul&gt;
+                                &lt;/li&gt;
+                              &lt;/ul&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+
+                          &lt;div class="col-md-9"&gt;
+                            &lt;div class="mb-5"&gt;
+                              &lt;p&gt;Capsule was launched in 2009 following the founders' frustration with existing CRM services that were either overly simplistic or far too complex for most businesses. We believe the value of a modern CRM lies in the ability to help businesses stay organized, know more about their customers, build strong relationships and to make the most of sales opportunities, all while minimizing user input. We built Capsule to deliver on these values and today Capsule is used by thousands of businesses of all sizes all over the world.&lt;/p&gt;
+
+                              &lt;div class="collapse" id="collapseLinkDescription"&gt;
+                                &lt;p&gt;We're based in Manchester, United Kingdom, a city with a creative heart that was founded on science and industry and the birthplace of the modern computer.&lt;/p&gt;
+                              &lt;/div&gt;
+
+                              &lt;a class="link-collapse" data-toggle="collapse" href="#collapseLinkDescription" role="button" aria-expanded="false" aria-controls="collapseLinkDescription"&gt;
+                                &lt;span class="link-collapse-default"&gt;Read more &lt;i class="fas fa-angle-down fa-sm ml-1"&gt;&lt;/i&gt;&lt;/span&gt;
+                                &lt;span class="link-collapse-active"&gt;Read less &lt;i class="fas fa-angle-up fa-sm ml-1"&gt;&lt;/i&gt;&lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+
+                            &lt;div id="fancyboxGallery"&gt;
+                              &lt;div class="row mx-n2"&gt;
+                                &lt;div class="col-4 col-sm px-2 mb-3 mb-sm-0"&gt;
+                                  &lt;a class="js-fancybox media-viewer" href="javascript:;"
+                                     data-hs-fancybox-options='{
+                                       "selector": "#fancyboxGallery .js-fancybox",
+                                       "speed": 700
+                                     }'
+                                     data-src="@@autopath/assets/img/900x900/img1.jpg"
+                                     data-caption="Front in frames - image #01"&gt;
+                                    &lt;img class="img-fluid rounded" src="@@autopath/assets/img/900x900/img1.jpg" alt="Image Description"&gt;
+
+                                    &lt;span class="media-viewer-container"&gt;
+                                      &lt;span class="media-viewer-icon"&gt;
+                                        &lt;i class="fas fa-plus media-viewer-icon-inner"&gt;&lt;/i&gt;
+                                      &lt;/span&gt;
+                                    &lt;/span&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="col-4 col-sm px-2 mb-3 mb-sm-0"&gt;
+                                  &lt;a class="js-fancybox media-viewer" href="javascript:;"
+                                     data-hs-fancybox-options='{
+                                       "selector": "#fancyboxGallery .js-fancybox",
+                                       "speed": 700
+                                     }'
+                                     data-src="@@autopath/assets/img/900x900/img8.jpg"
+                                     data-caption="Front in frames - image #02"&gt;
+                                    &lt;img class="img-fluid rounded" src="@@autopath/assets/img/900x900/img8.jpg" alt="Image Description"&gt;
+
+                                    &lt;span class="media-viewer-container"&gt;
+                                      &lt;span class="media-viewer-icon"&gt;
+                                        &lt;i class="fas fa-plus media-viewer-icon-inner"&gt;&lt;/i&gt;
+                                      &lt;/span&gt;
+                                    &lt;/span&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="col-4 col-sm px-2 mb-3 mb-sm-0"&gt;
+                                  &lt;a class="js-fancybox media-viewer" href="javascript:;"
+                                     data-hs-fancybox-options='{
+                                       "selector": "#fancyboxGallery .js-fancybox",
+                                       "speed": 700
+                                     }'
+                                     data-src="@@autopath/assets/img/900x900/img7.jpg"
+                                     data-caption="Front in frames - image #03"&gt;
+                                    &lt;img class="img-fluid rounded" src="@@autopath/assets/img/900x900/img7.jpg" alt="Image Description"&gt;
+
+                                    &lt;span class="media-viewer-container"&gt;
+                                      &lt;span class="media-viewer-icon"&gt;
+                                        &lt;i class="fas fa-plus media-viewer-icon-inner"&gt;&lt;/i&gt;
+                                      &lt;/span&gt;
+                                    &lt;/span&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="col-4 col-sm px-2 mb-3 mb-sm-0"&gt;
+                                  &lt;a class="js-fancybox media-viewer" href="javascript:;"
+                                     data-hs-fancybox-options='{
+                                       "selector": "#fancyboxGallery .js-fancybox",
+                                       "speed": 700
+                                     }'
+                                     data-src="@@autopath/assets/img/900x900/img23.jpg"
+                                     data-caption="Front in frames - image #04"&gt;
+                                    &lt;img class="img-fluid rounded" src="@@autopath/assets/img/900x900/img23.jpg" alt="Image Description"&gt;
+
+                                    &lt;span class="media-viewer-container"&gt;
+                                      &lt;span class="media-viewer-icon"&gt;
+                                        &lt;i class="fas fa-plus media-viewer-icon-inner"&gt;&lt;/i&gt;
+                                      &lt;/span&gt;
+                                    &lt;/span&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="col-4 col-sm px-2 mb-3 mb-sm-0"&gt;
+                                  &lt;a class="js-fancybox media-viewer" href="javascript:;"
+                                     data-hs-fancybox-options='{
+                                       "selector": "#fancyboxGallery .js-fancybox",
+                                       "speed": 700
+                                     }'
+                                     data-src="@@autopath/assets/img/900x900/img9.jpg"
+                                     data-caption="Front in frames - image #05"&gt;
+                                    &lt;img class="img-fluid rounded" src="@@autopath/assets/img/900x900/img9.jpg" alt="Image Description"&gt;
+
+                                    &lt;span class="media-viewer-container"&gt;
+                                      &lt;span class="media-viewer-icon media-viewer-icon-active"&gt;
+                                        &lt;span class="media-viewer-icon-inner"&gt;+1&lt;/span&gt;
+                                      &lt;/span&gt;
+                                    &lt;/span&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+
+                              &lt;img class="js-fancybox d-none" alt="Image Description"
+                                   data-hs-fancybox-options='{
+                                     "selector": "#fancyboxGallery .js-fancybox",
+                                     "speed": 700
+                                   }'
+                                   data-src="@@autopath/assets/img/900x900/img2.jpg"
+                                   data-caption="Front in frames - image #06"&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Row --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- About Section --&gt;
+                    </code>
+                  </pre>
+                </div>
+                <div class="tab-pane fade" id="pills-css-2" role="tabpanel" aria-labelledby="pills-css-tab-2">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+                      &lt;!-- CSS Implementing Plugins --&gt;
+                      &lt;link rel="stylesheet" href="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"&gt;
+                    </code>
+                  </pre>
+                </div>
+                <div class="tab-pane fade" id="pills-js-2" role="tabpanel" aria-labelledby="pills-js-tab-2">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+                      &lt;!-- JS Implementing Plugins --&gt;
+                      &lt;script src="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"&gt;&lt;/script&gt;
+
+                      &lt;!-- JS Front --&gt;
+                      &lt;script src="@@autopath/assets/js/hs.fancybox.js"&gt;&lt;/script&gt;
+
+                      &lt;!-- JS Plugins Init. --&gt;
+                      &lt;script&gt;
+                        $(document).on('ready', function () {
+                          // INITIALIZATION OF FANCYBOX
+                          // =======================================================
+                          $('.js-fancybox').each(function () {
+                            var fancybox = $.HSCore.components.HSFancyBox.init($(this));
+                          });
+                        });
+                      &lt;/script&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <!-- End Tab Wrapper -->
+          </div>
+          <!-- End Component Block -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-scroll-to-in-overflowed-container/dist/hs-scroll-to-in-overflowed-container.min.js"></script>
+  <script src="@@autopath/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JSFront -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF SCROLL TO IN OVERFLOWED CONTAINER
+      // =======================================================
+      var scrollToInOverflowedContainerNav = new HSScrollToInOverflowedContainer($('.hs-sidebar-sticky'), {
+        targetEl: "#snippetsSidebarNav .hs-sidebar-item.active"
+      }).init();
+    });
+
+    $(window).on('load', function () {
+      // INITIALIZATION OF AUTOCOMPLET
+      // =======================================================
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

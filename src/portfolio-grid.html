@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Portfolio - Boxed Card | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.googleFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/header/main-with-topbar-transparent-shadow-on-scroll.html", {
+    "category": "pages",
+    "subcategory": "portfolio",
+    "link": "portfolio-grid.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main">
+    <div class="container space-top-3 space-top-lg-4 space-bottom-2 space-bottom-lg-3">
+      <!-- Hero -->
+      <div class="text-center mb-5 mb-md-9">
+        <p class="lead">Hi! My name is Brian Kray.</p>
+        <h1 class="display-4 mb-0">I
+          <span class="js-text-animation"
+                data-hs-typed-options='{
+                  "strings": ["create a portfolio", "publicize my band", "sell my products", "promote my business", "display my photographs", "promote my business", "publish my videos"],
+                  "typeSpeed": 100,
+                  "loop": true,
+                  "backSpeed": 50,
+                  "backDelay": 1500
+                }'></span>
+        </h1>
+      </div>
+      <!-- End Hero -->
+
+      <!-- Filter -->
+      <div id="filterControls" class="text-center mb-5 mb-md-7">
+        <a class="cbp-filter-item cbp-filter-item-active btn btn-xs btn-soft-secondary btn-pill py-2 px-3 m-1" href="javascript:;" data-filter="*">All</a>
+        <a class="cbp-filter-item btn btn-xs btn-soft-secondary btn-pill py-2 px-3 m-1" href="javascript:;" data-filter=".branding">Branding</a>
+        <a class="cbp-filter-item btn btn-xs btn-soft-secondary btn-pill py-2 px-3 m-1" href="javascript:;" data-filter=".product">Product</a>
+        <a class="cbp-filter-item btn btn-xs btn-soft-secondary btn-pill py-2 px-3 m-1" href="javascript:;" data-filter=".design">Design</a>
+        <a class="cbp-filter-item btn btn-xs btn-soft-secondary btn-pill py-2 px-3 m-1" href="javascript:;" data-filter=".illustration">Illustration</a>
+      </div>
+      <!-- End Filter -->
+
+      <div class="cbp"
+           data-hs-cbp-options='{
+             "animationType": "fadeOut",
+             "caption": "zoom",
+             "gapHorizontal": 40,
+             "gapVertical": 40,
+             "mediaQueries": [
+               {"width": 1500, "cols": 3},
+               {"width": 1100, "cols": 3},
+               {"width": 800, "cols": 3},
+               {"width": 480, "cols": 2},
+               {"width": 380, "cols": 1}
+             ]
+           }'>
+        <!-- Item -->
+        <div class="cbp-item product">
+          <a class="cbp-caption" href="@@autopath/portfolio-single-page-grid.html">
+            <div class="overflow-hidden rounded-lg">
+              <div class="cbp-caption-defaultWrap">
+                <img class="rounded-lg" src="@@autopath/assets/img/400x500/img12.jpg" alt="Image Description">
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="d-block small text-body font-weight-bold text-cap">Product</span>
+              <span class="d-block h3 mb-0">Canva Schedule</span>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item branding">
+          <a class="cbp-caption" href="@@autopath/portfolio-single-page-grid.html">
+            <div class="overflow-hidden rounded-lg">
+              <div class="cbp-caption-defaultWrap">
+                <img class="rounded-lg" src="@@autopath/assets/img/400x500/img11.jpg" alt="Image Description">
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="d-block small text-body font-weight-bold text-cap">Product</span>
+              <span class="d-block h3 mb-0">Electro bike</span>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item product branding">
+          <a class="cbp-caption" href="@@autopath/portfolio-single-page-grid.html">
+            <div class="overflow-hidden rounded-lg">
+              <div class="cbp-caption-defaultWrap">
+                <img class="rounded-lg" src="@@autopath/assets/img/400x500/img21.jpg" alt="Image Description">
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="d-block small text-body font-weight-bold text-cap">Branding</span>
+              <span class="d-block h3 mb-0">Larq</span>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item product illustration">
+          <a class="cbp-caption" href="@@autopath/portfolio-single-page-grid.html">
+            <div class="overflow-hidden rounded-lg">
+              <div class="cbp-caption-defaultWrap">
+                <img class="rounded-lg" src="@@autopath/assets/img/400x500/img24.jpg" alt="Image Description">
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="d-block small text-body font-weight-bold text-cap">Product</span>
+              <span class="d-block h3 mb-0">Zibbet</span>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item design illustration">
+          <a class="cbp-caption" href="@@autopath/portfolio-single-page-grid.html">
+            <div class="overflow-hidden rounded-lg">
+              <div class="cbp-caption-defaultWrap">
+                <img class="rounded-lg" src="@@autopath/assets/img/400x500/img19.jpg" alt="Image Description">
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="d-block small text-body font-weight-bold text-cap">Illustration</span>
+              <span class="d-block h3 mb-0">Adobe Ai</span>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item product branding">
+          <a class="cbp-caption" href="@@autopath/portfolio-single-page-grid.html">
+            <div class="overflow-hidden rounded-lg">
+              <div class="cbp-caption-defaultWrap">
+                <img class="rounded-lg" src="@@autopath/assets/img/400x500/img20.jpg" alt="Image Description">
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="d-block small text-body font-weight-bold text-cap">Branding</span>
+              <span class="d-block h3 mb-0">Goby</span>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item product branding">
+          <a class="cbp-caption" href="@@autopath/portfolio-single-page-grid.html">
+            <div class="overflow-hidden rounded-lg">
+              <div class="cbp-caption-defaultWrap">
+                <img class="rounded-lg" src="@@autopath/assets/img/400x500/img22.jpg" alt="Image Description">
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="d-block small text-body font-weight-bold text-cap">Branding</span>
+              <span class="d-block h3 mb-0">OK</span>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item product branding">
+          <a class="cbp-caption" href="@@autopath/portfolio-single-page-grid.html">
+            <div class="overflow-hidden rounded-lg">
+              <div class="cbp-caption-defaultWrap">
+                <img class="rounded-lg" src="@@autopath/assets/img/400x500/img23.jpg" alt="Image Description">
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="d-block small text-body font-weight-bold text-cap">Design</span>
+              <span class="d-block h3 mb-0">Flaunter</span>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item product branding">
+          <a class="cbp-caption" href="@@autopath/portfolio-single-page-grid.html">
+            <div class="overflow-hidden rounded-lg">
+              <div class="cbp-caption-defaultWrap">
+                <img class="rounded-lg" src="@@autopath/assets/img/400x500/img10.jpg" alt="Image Description">
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="d-block small text-body font-weight-bold text-cap">Design</span>
+              <span class="d-block h3 mb-0">Inside weather</span>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/main-dark.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up Modal -->
+  @@include("@@autopath/partials/modal/signup.html")
+  <!-- End Sign Up Modal -->
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- Go to Top -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="@@autopath/assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+  <script src="@@autopath/node_modules/typed.js/lib/typed.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.validation.js"></script>
+  <script src="@@autopath/assets/js/hs.cubeportfolio.js"></script>
+  <script src="@@autopath/assets/js/hs.typed.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
+
+
+      // INITIALIZATION OF UNFOLD
+      // =======================================================
+      var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      $('.js-animation-link').each(function () {
+        var showAnimation = new HSShowAnimation($(this)).init();
+      });
+
+
+      // INITIALIZATION OF FORM VALIDATION
+      // =======================================================
+      $('.js-validate').each(function() {
+        $.HSCore.components.HSValidation.init($(this), {
+          rules: {
+            confirmPassword: {
+              equalTo: '#signupPassword'
+            }
+          }
+        });
+      });
+
+
+      // INITIALIZATION OF CUBEPORTFOLIO
+      // =======================================================
+      $('.cbp').each(function () {
+        var cbp = $.HSCore.components.HSCubeportfolio.init($(this), {
+          layoutMode: 'grid',
+          filters: '#filterControls',
+          displayTypeSpeed: 0
+        });
+      });
+
+
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
+      // =======================================================
+      var typed = $.HSCore.components.HSTyped.init(".js-text-animation");
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="@@autopath/node_modules/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
+</body>
+</html>

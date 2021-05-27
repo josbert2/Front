@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Notifications | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.googleFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/header/main-with-topbar.html", {
+    "category": "pages",
+    "subcategory": "account",
+    "link": "account-overview.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main" class="bg-light">
+    <!-- Breadcrumb Section -->
+    <div class="bg-dark" style="background-image: url(@@autopath/assets/svg/components/abstract-shapes-20.svg);">
+      <div class="container space-1 space-top-lg-2 space-bottom-lg-3">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="d-none d-lg-block">
+              <h1 class="h2 text-white">Notifications</h1>
+            </div>
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb breadcrumb-light breadcrumb-no-gutter mb-0">
+              <li class="breadcrumb-item">Account</li>
+              <li class="breadcrumb-item active" aria-current="page">Notifications</li>
+            </ol>
+            <!-- End Breadcrumb -->
+          </div>
+
+          <div class="col-auto">
+            <div class="d-none d-lg-block">
+              <a class="btn btn-sm btn-soft-light" href="#">Log out</a>
+            </div>
+
+            <!-- Responsive Toggle Button -->
+            <button type="button" class="navbar-toggler btn btn-icon btn-sm rounde-circle d-lg-none"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="sidebarNav"
+                    data-toggle="collapse"
+                    data-target="#sidebarNav">
+              <span class="navbar-toggler-default">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+                </svg>
+              </span>
+              <span class="navbar-toggler-toggled">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+                </svg>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Breadcrumb Section -->
+
+    <!-- Content Section -->
+    <div class="container space-1 space-top-lg-0 space-bottom-lg-2 mt-lg-n10">
+      <div class="row">
+        <div class="col-lg-3">
+          <!-- Navbar -->
+          <div class="navbar-expand-lg navbar-expand-lg-collapse-block navbar-light">
+            <div id="sidebarNav" class="collapse navbar-collapse navbar-vertical">
+              <!-- Card -->
+              <div class="card mb-5">
+                <div class="card-body">
+                  <!-- Avatar -->
+                  <div class="d-none d-lg-block text-center mb-5">
+                    <div class="avatar avatar-xxl avatar-circle mb-3">
+                      <img class="avatar-img" src="@@autopath/assets/img/160x160/img1.jpg" alt="Image Description">
+                      <img class="avatar-status avatar-lg-status" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" data-toggle="tooltip" data-placement="top" title="Verified user">
+                    </div>
+
+                    <h4 class="card-title">Natalie Curtis</h4>
+                    <p class="card-text font-size-1">natalie@example.com</p>
+                  </div>
+                  <!-- End Avatar -->
+
+                  <!-- Nav -->
+                  @@include("@@autopath/partials/layouts-components/nav-menu-account.html", {
+                    "link": "account-notifications.html"
+                  })
+                  <!-- End Nav -->
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+          </div>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="col-lg-9">
+          <!-- Card -->
+          <div class="card mb-3 mb-lg-5">
+            <!-- Header -->
+            <div class="card-header">
+              <h5 class="card-header-title">My network</h5>
+
+              <a id="toggleAll1" class="js-toggle-state link-underline" href="javascript:;"
+                 data-hs-toggle-state-options='{
+                   "targetSelector": "#customSwitch1, #customSwitch2, #customSwitch3, #customSwitch4"
+                 }'>
+                <span class="link-underline-toggle-default">Toggle all</span>
+                <span class="link-underline-toggle-toggled">Untoggle all</span>
+              </a>
+            </div>
+            <!-- End Header -->
+
+            <!-- Alert -->
+            <div class="alert alert-soft-danger text-center rounded-0 mb-0" role="alert">
+              We need permission from your browser to show notifications. <a class="alert-link" href="#">Request permission</a>
+            </div>
+            <!-- End Alert -->
+
+            <div class="card-body">
+              <div class="mb-3">
+                <small class="card-subtitle">Send me:</small>
+              </div>
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch1">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch1">
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">New for you</span>
+                  <small class="d-block text-muted">A weekly email featuring shots from designers you follow</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+
+              <hr class="my-3">
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch2">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch2" checked>
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">Account activity <span class="badge badge-success ml-1">New</span></span>
+                  <small class="d-block text-muted">Get important notifications about you or activity you've missed</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+
+              <hr class="my-3">
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch3">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch3" checked>
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">Meetups near you <span class="badge badge-success ml-1">New</span></span>
+                  <small class="d-block text-muted">Get an email when a Dribbble Meetup is posted close to my location</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+
+              <hr class="my-3">
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch4">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch4">
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">Opportunities</span>
+                  <small class="d-block text-muted">Get a daily email when new design jobs are posted in your area</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+            </div>
+          </div>
+          <!-- End Card -->
+
+          <!-- Card -->
+          <div class="card mb-3 mb-lg-5">
+            <!-- Header -->
+            <div class="card-header">
+              <h5 class="card-header-title">Front emails</h5>
+
+              <a id="toggleAll3" class="js-toggle-state link-underline" href="javascript:;"
+                 data-hs-toggle-state-options='{
+                   "targetSelector": "#customSwitch5, #customSwitch6, #customSwitch7, #customSwitch8"
+                 }'>
+                <span class="link-underline-toggle-default">Toggle all</span>
+                <span class="link-underline-toggle-toggled">Untoggle all</span>
+              </a>
+            </div>
+            <!-- End Header -->
+
+            <div class="card-body">
+              <div class="mb-3">
+                <small class="card-subtitle">Subscribe me to:</small>
+              </div>
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch5">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch5" checked>
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">Company news</span>
+                  <small class="d-block text-muted">Get Front news, announcements, and product updates</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+
+              <hr class="my-3">
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch6">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch6">
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">Replay <span class="badge badge-success ml-1">New</span></span>
+                  <small class="d-block text-muted">A weekly email featuring popular shots</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+
+              <hr class="my-3">
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch7">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch7">
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">Courtside <span class="badge badge-success ml-1">New</span></span>
+                  <small class="d-block text-muted">A weekly email featuring the latest stories from our blog</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+
+              <hr class="my-3">
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch8">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch8">
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">Weekly jobs</span>
+                  <small class="d-block text-muted">Weekly digest of design jobs</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+            </div>
+          </div>
+          <!-- End Card -->
+
+          <!-- Card -->
+          <div class="card mb-3 mb-lg-5">
+            <!-- Header -->
+            <div class="card-header">
+              <h5 class="card-header-title">Usage</h5>
+
+              <a id="toggleAll4" class="js-toggle-state link-underline" href="javascript:;"
+                 data-hs-toggle-state-options='{
+                   "targetSelector": "#customSwitch9, #customSwitch10, #customSwitch11"
+                 }'>
+                <span class="link-underline-toggle-default">Toggle all</span>
+                <span class="link-underline-toggle-toggled">Untoggle all</span>
+              </a>
+            </div>
+            <!-- End Header -->
+
+            <div class="card-body">
+              <div class="mb-3">
+                <small class="card-subtitle">Allow others to:</small>
+              </div>
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch9">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch9">
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">Encrypt data</span>
+                  <small class="d-block text-muted">Encrypt all data associated with account</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+
+              <hr class="my-3">
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch10">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch10" checked>
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">Location services</span>
+                  <small class="d-block text-muted">Allow third-party apps to use current location</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+
+              <hr class="my-3">
+
+              <!-- Checkbox Switch -->
+              <label class="toggle-switch d-flex" for="customSwitch11">
+                <input type="checkbox" class="toggle-switch-input" id="customSwitch11">
+                <span class="toggle-switch-label">
+                  <span class="toggle-switch-indicator"></span>
+                </span>
+                <span class="toggle-switch-content">
+                  <span class="d-block">Allow private notes</span>
+                  <small class="d-block text-muted">Members can send you private notes</small>
+                </span>
+              </label>
+              <!-- End Checkbox Switch -->
+            </div>
+          </div>
+          <!-- End Card -->
+
+          <!-- Toggle Button -->
+          <div class="d-sm-flex justify-content-between align-items-center">
+            <div class="mb-3 mb-sm-0">
+              <small class="card-subtitle">Turn all notifications on or off:</small>
+            </div>
+
+            <a class="js-toggle-state btn btn-sm btn-primary" href="javascript:;"
+               data-hs-toggle-state-options='{
+                 "targetSelector": "#customSwitch1, #customSwitch2, #customSwitch3, #customSwitch4, #customSwitch5, #customSwitch6, #customSwitch7, #customSwitch8, #customSwitch9, #customSwitch10, #customSwitch11",
+                 "slaveSelector": "#toggleAll1, #toggleAll2, #toggleAll3, #toggleAll4"
+               }'>
+              <span class="btn-toggle-default">
+                <i class="fas fa-toggle-off mr-1"></i> Turn OFF
+              </span>
+              <span class="btn-toggle-toggled">
+                <i class="fas fa-toggle-on mr-1"></i> Turn ON
+              </span>
+            </a>
+          </div>
+          <!-- End Toggle Button -->
+        </div>
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Content Section -->
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/main-dark.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up Modal -->
+  @@include("@@autopath/partials/modal/signup.html")
+  <!-- End Sign Up Modal -->
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- Go to Top -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-toggle-state/dist/hs-toggle-state.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.validation.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
+
+
+      // INITIALIZATION OF UNFOLD
+      // =======================================================
+      var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+
+      // INITIALIZATION OF FORM VALIDATION
+      // =======================================================
+      $('.js-validate').each(function() {
+        $.HSCore.components.HSValidation.init($(this), {
+          rules: {
+            confirmPassword: {
+              equalTo: '#signupPassword'
+            }
+          }
+        });
+      });
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      $('.js-animation-link').each(function () {
+        var showAnimation = new HSShowAnimation($(this)).init();
+      });
+
+
+      // INITIALIZATION OF TOGGLE STATE
+      // =======================================================
+      $('.js-toggle-state').each(function () {
+        var toggleState = new HSToggleState($(this)).init();
+      });
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="@@autopath/node_modules/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
+</body>
+</html>

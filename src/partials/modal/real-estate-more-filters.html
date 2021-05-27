@@ -1,0 +1,185 @@
+<div class="modal fade" id="RealEstateMoreFiltersModal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="RealEstateMoreFiltersModalTitle">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <!-- Header -->
+      <div class="modal-header">
+        <h4 id="RealEstateMoreFiltersModalTitle" class="modal-title">More filters</h4>
+        <div class="modal-close">
+          <button type="button" class="btn btn-icon btn-xs btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- End Header -->
+
+      <!-- Body -->
+      <div class="modal-body">
+        <label class="input-label">Status</label>
+
+        <!-- Button Group -->
+        <div id="statusLabel" class="btn-group btn-group-toggle btn-group-segment d-flex form-group" data-toggle="buttons">
+          <label class="btn btn-sm flex-fill active">
+            <input type="radio" name="options" id="optionBuy" checked>Buy
+          </label>
+          <label class="btn btn-sm flex-fill">
+            <input type="radio" name="options" id="optionRent">Rent
+          </label>
+          <label class="btn btn-sm flex-fill">
+            <input type="radio" name="options" id="optionSold">Sold
+          </label>
+        </div>
+        <!-- End Button Group -->
+
+        <!-- Form Group -->
+        <div class="form-group">
+          <!-- Select -->
+          <label for="featuresLabel" class="input-label">Features</label>
+
+          <select id="featuresLabel" class="js-custom-select" multiple
+                  data-hs-select2-options='{
+                    "minimumResultsForSearch": "Infinity",
+                    "customClass": "custom-select custom-select-sm",
+                    "placeholder": "Select features"
+                  }'>
+            <option label="empty"></option>
+            <option value="Pets allowed">Pets allowed</option>
+            <option value="Parking lot">Parking lot</option>
+            <option value="Balcony">Balcony</option>
+            <option value="Garden">Garden</option>
+            <option value="Laundry">Laundry</option>
+            <option value="Heating">Heating</option>
+            <option value="AC">AC</option>
+          </select>
+          <!-- End Select -->
+        </div>
+        <!-- End Form Group -->
+
+        <div class="row mx-n2">
+          <div class="col-6 px-2">
+            <!-- Form Group -->
+            <div class="form-group">
+              <label for="bedsLabel" class="input-label">Beds</label>
+
+              <!-- Select -->
+              <select id="bedsLabel" class="js-custom-select"
+                      data-hs-select2-options='{
+                        "minimumResultsForSearch": "Infinity",
+                        "customClass": "custom-select custom-select-sm"
+                      }'>
+                <option value="bedValueAny" selected>Any</option>
+                <option value="bedValueMin1">1</option>
+                <option value="bedValueMin2">2</option>
+                <option value="bedValueMin3">3</option>
+                <option value="bedValueMin4">4</option>
+                <option value="bedValueMin5">5</option>
+              </select>
+              <!-- End Select -->
+            </div>
+            <!-- End Form Group -->
+          </div>
+
+          <div class="col-6 px-2">
+            <!-- Form Group -->
+            <div class="form-group">
+              <!-- Select -->
+              <label for="bathLabel" class="input-label">Baths</label>
+
+              <select id="bathLabel" class="js-custom-select"
+                      data-hs-select2-options='{
+                        "minimumResultsForSearch": "Infinity",
+                        "customClass": "custom-select custom-select-sm"
+                      }'>
+                <option value="bedValueAny" selected>Any</option>
+                <option value="bedValueMax1">1</option>
+                <option value="bedValueMax2">2</option>
+                <option value="bedValueMax3">3</option>
+                <option value="bedValueMax4">4</option>
+                <option value="bedValueMax5">5</option>
+              </select>
+              <!-- End Select -->
+            </div>
+            <!-- End Form Group -->
+          </div>
+        </div>
+        <!-- End Row -->
+
+        <label for="squareFeetLabel" class="input-label">Square feet</label>
+
+        <div class="row mx-n2">
+          <div class="col-6 px-2">
+            <!-- Form Group -->
+            <div class="form-group">
+              <input type="text" class="form-control form-control-sm" id="squareFeetLabel" placeholder="No min">
+            </div>
+            <!-- End Form Group -->
+          </div>
+
+          <div class="col-6 px-2">
+            <!-- Form Group -->
+            <div class="form-group">
+              <input type="text" class="form-control form-control-sm" placeholder="No max">
+            </div>
+            <!-- End Form Group -->
+          </div>
+        </div>
+        <!-- End Row -->
+
+        <!-- Form Group -->
+        <div class="form-group">
+          <!-- Select -->
+          <label for="lotSizeLabel" class="input-label">Lot size</label>
+
+          <select id="lotSizeLabel" class="js-custom-select"
+                  data-hs-select2-options='{
+                    "minimumResultsForSearch": "Infinity",
+                    "customClass": "custom-select custom-select-sm"
+                  }'>
+            <option value="No Min">No Min</option>
+            <option value="2000+ sqft">2000+ sqft</option>
+            <option value="3000+ sqft">3000+ sqft</option>
+            <option value="4000+ sqft">4000+ sqft</option>
+            <option value="5000+ sqft">5000+ sqft</option>
+            <option value="7500+ sqft">7500+ sqft</option>
+            <option value="0.25+ acre / 10890+ sqft">0.25+ acre / 10890+ sqft</option>
+            <option value="0.5+ acre / 21780+ sqft">0.5+ acre / 21780+ sqft</option>
+            <option value="1+ acre">1+ acre</option>
+            <option value="2+ acre">2+ acre</option>
+            <option value="5+ acre">5+ acre</option>
+            <option value="10+ acre">10+ acre</option>
+          </select>
+          <!-- End Select -->
+        </div>
+        <!-- End Form Group -->
+
+        <label for="yearBuiltLabel" class="input-label">Year built</label>
+
+        <div class="row mx-n2">
+          <div class="col-6 px-2">
+            <!-- Form Group -->
+            <div class="form-group">
+              <input type="text" class="form-control form-control-sm" id="yearBuiltLabel" placeholder="Min year">
+            </div>
+            <!-- End Form Group -->
+          </div>
+
+          <div class="col-6 px-2">
+            <!-- Form Group -->
+            <div class="form-group">
+              <input type="text" class="form-control form-control-sm" placeholder="Max year">
+            </div>
+            <!-- End Form Group -->
+          </div>
+        </div>
+        <!-- End Row -->
+      </div>
+      <!-- End Body -->
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-white mr-2" data-dismiss="modal">Clear all</button>
+        <button type="button" class="btn btn-sm btn-primary">Show 100+ Homes</button>
+      </div>
+    </div>
+  </div>
+</div>

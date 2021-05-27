@@ -1,0 +1,173 @@
+
+<div class="hs-sidebar-scrollbar hs-sidebar-sticky pl-2 pl-md-0 pr-2">
+  <ul id="snippetsSidebarNav" class="hs-sidebar-nav">
+    <li class="hs-sidebar-item @@if(link=='index.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='index.html'){active}" href="index.html">Intro</a>
+    </li>
+
+    <!-- Header -->
+    <li class="hs-sidebar-item">
+      <span class="hs-sidebar-heading hs-sidebar-heading-first">Header</span>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='headers.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='headers.html'){active}" href="headers.html">Headers (Navbar)</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='hero.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='hero.html'){active}" href="hero.html">Hero</a>
+    </li>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <li class="hs-sidebar-item">
+      <span class="hs-sidebar-heading">Content</span>
+    </li>
+
+    <li class="hs-sidebar-item @@if(category=='features'){active}">
+      <a class="hs-sidebar-link dropdown-toggle dropdown-toggle-collapse" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="@@if(category=='features'){true}@@if(category!=='features'){false}" aria-controls="snippetsSidebarNavFeaturesCollapse" data-target="#snippetsSidebarNavFeaturesCollapse">Features</a>
+
+      <ul id="snippetsSidebarNavFeaturesCollapse" class="hs-sidebar-collapse list-unstyled collapse @@if(category=='features'){show}" data-parent="#snippetsSidebarNav">
+        <li><a class="hs-sidebar-link @@if(link=='features-general.html'){active}" href="features-general.html">General</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='features-stats.html'){active}" href="features-stats.html">Stats</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='features-step.html'){active}" href="features-step.html">Step</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='features-navs.html'){active}" href="features-navs.html">Navs (Tabs)</a></li>
+      </ul>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='icon-blocks.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='icon-blocks.html'){active}" href="icon-blocks.html">Icon Blocks</a>
+    </li>
+
+    <li class="hs-sidebar-item @@if(category=='cards'){active}">
+      <a class="hs-sidebar-link dropdown-toggle dropdown-toggle-collapse" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="@@if(category=='cards'){true}@@if(category!=='cards'){false}" aria-controls="snippetsSidebarNavCardCollapse" data-target="#snippetsSidebarNavCardCollapse">Cards</a>
+
+      <ul id="snippetsSidebarNavCardCollapse" class="hs-sidebar-collapse list-unstyled collapse @@if(category=='cards'){show}" data-parent="#snippetsSidebarNav">
+        <li><a class="hs-sidebar-link @@if(link=='card-grid.html'){active}" href="card-grid.html">Grid</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='card-list.html'){active}" href="card-list.html">List</a></li>
+      </ul>
+    </li>
+
+    <li class="hs-sidebar-item @@if(category=='directory'){active}">
+      <a class="hs-sidebar-link dropdown-toggle dropdown-toggle-collapse" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="@@if(category=='directory'){true}@@if(category!=='directory'){false}" aria-controls="snippetsSidebarNavDirectoryCollapse" data-target="#snippetsSidebarNavDirectoryCollapse">Directory</a>
+
+      <ul id="snippetsSidebarNavDirectoryCollapse" class="hs-sidebar-collapse list-unstyled collapse @@if(category=='directory'){show}" data-parent="#snippetsSidebarNav">
+        <li><a class="hs-sidebar-link @@if(link=='directory-grid.html'){active}" href="directory-grid.html">Grid</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='directory-list.html'){active}" href="directory-list.html">List</a></li>
+      </ul>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='testimonials.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='testimonials.html'){active}" href="testimonials.html">Testimonials</a>
+    </li>
+
+    <li class="hs-sidebar-item @@if(category=='blogs'){active}">
+      <a class="hs-sidebar-link dropdown-toggle dropdown-toggle-collapse" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="@@if(category=='blogs'){true}@@if(category!=='blogs'){false}" aria-controls="snippetsSidebarNavBlogsCollapse" data-target="#snippetsSidebarNavBlogsCollapse">Blogs</a>
+
+      <ul id="snippetsSidebarNavBlogsCollapse" class="hs-sidebar-collapse list-unstyled collapse @@if(category=='blogs'){show}" data-parent="#snippetsSidebarNav">
+        <li><a class="hs-sidebar-link @@if(link=='blog-grid.html'){active}" href="blog-grid.html">Grid</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='blog-list.html'){active}" href="blog-list.html">List</a></li>
+      </ul>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='tables.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='tables.html'){active}" href="tables.html">Tables</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='ecommerce.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='ecommerce.html'){active}" href="ecommerce.html">E-commerce</a>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='pricing.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='pricing.html'){active}" href="pricing.html">Pricing</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='team.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='team.html'){active}" href="team.html">Team</a>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='breadcrumb.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='breadcrumb.html'){active}" href="breadcrumb.html">Breadcrumb</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='cta.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='cta.html'){active}" href="cta.html">Call To Actions (CTA)</a>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='modals.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='modals.html'){active}" href="modals.html">Modals</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='portfolio.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='portfolio.html'){active}" href="portfolio.html">Portfolio</a>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='gallery.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='gallery.html'){active}" href="gallery.html">Gallery</a>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='clients.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='clients.html'){active}" href="clients.html">Clients</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='countdown.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='countdown.html'){active}" href="countdown.html">Countdown</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='faq.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='faq.html'){active}" href="faq.html">FAQ</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='collapse.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='collapse.html'){active}" href="collapse.html">Collapse / Accordion</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='comments.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='comments.html'){active}" href="comments.html">Comments</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='feedback-and-reviews.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='feedback-and-reviews.html'){active}" href="feedback-and-reviews.html">Feedback &amp; Reviews</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='user-profile.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='user-profile.html'){active}" href="user-profile.html">User Profiles</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='bio.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='bio.html'){active}" href="bio.html">BIO</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='timeline.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='timeline.html'){active}" href="timeline.html">Timeline</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='sidebar-examples.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='sidebar-examples.html'){active}" href="sidebar-examples.html">Sidebar examples</a>
+    </li>
+
+    <li class="hs-sidebar-item @@if(category=='form-layouts'){active}">
+      <a class="hs-sidebar-link dropdown-toggle dropdown-toggle-collapse" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="@@if(category=='form-layouts'){true}@@if(category!=='form-layouts'){false}" aria-controls="snippetsSidebarNavFormsCollapse" data-target="#snippetsSidebarNavFormsCollapse">Form Layouts</a>
+
+      <ul id="snippetsSidebarNavFormsCollapse" class="hs-sidebar-collapse list-unstyled collapse @@if(category=='form-layouts'){show}" data-parent="#snippetsSidebarNav">
+        <li><a class="hs-sidebar-link @@if(link=='form-layouts-authentication.html'){active}" href="form-layouts-authentication.html">Authentication</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='form-layouts-feedback.html'){active}" href="form-layouts-feedback.html">Feedback</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='form-layouts-filters.html'){active}" href="form-layouts-filters.html">Filters</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='form-layouts-search.html'){active}" href="form-layouts-search.html">Search</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='form-layouts-subscribe.html'){active}" href="form-layouts-subscribe.html">Subscribe</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='form-layouts-account.html'){active}" href="form-layouts-account.html">Account</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='form-layouts-ecommerce.html'){active}" href="form-layouts-ecommerce.html">Ecommerce</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='form-layouts-directory.html'){active}" href="form-layouts-directory.html">Directory</a></li>
+        <li><a class="hs-sidebar-link @@if(link=='form-layouts-wizards-and-steps.html'){active}" href="form-layouts-wizards-and-steps.html">Wizard &amp; Steps</a></li>
+      </ul>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='calendar.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='calendar.html'){active}" href="calendar.html">Calendar View</a>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='notification.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='notification.html'){active}" href="notification.html">Notification</a>
+    </li>
+    <!-- End Content -->
+
+    <!-- Contact / Footer -->
+    <li class="hs-sidebar-item">
+      <span class="hs-sidebar-heading">Contact / Footer</span>
+    </li>
+
+    <li class="hs-sidebar-item @@if(link=='contacts.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='contacts.html'){active}" href="contacts.html">Contacts</a>
+    </li>
+    <li class="hs-sidebar-item @@if(link=='footers.html'){active}">
+      <a class="hs-sidebar-link @@if(link=='footers.html'){active}" href="footers.html">Footers</a>
+    </li>
+    <!-- End Footer / CTA -->
+  </ul>
+</div>

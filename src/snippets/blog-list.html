@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>List Blogs - Snippets | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.googleFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/jquery-ui-dist/jquery-ui.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="@@autopath/assets/css/snippets.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        @@include('@@autopath/partials/snippets/header.html')
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="@@autopath/assets/json/snippets-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          @@include("@@autopath/partials/snippets/sidebar.html", {
+            "category": "blogs",
+            "link": "blog-list.html"
+          })
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-1">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1 class="mb-0">Blogs - List</h1>
+          </div>
+
+          <!-- Component Block -->
+          <div id="component-1" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Component #1 <a class="anchorjs-link" href="#component-1" data-anchorjs-icon="#"></a></h2>
+
+            <!-- Tab Wrapper -->
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1" data-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1" data-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                  <!-- Blog Card -->
+                  <div class="container">
+                    <article class="card">
+                      <div class="row no-gutters">
+                        <div class="col-lg-8">
+                          <div class="position-relative overflow-hidden">
+                            <img class="card-img" src="@@autopath/assets/img/900x450/img2.jpg" alt="Image Description">
+                            <figure class="d-none d-lg-block">
+                              <svg class="ie-curved-x position-absolute top-0 right-0 bottom-0 mr-n1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 100.1 1920" height="101%">
+                                <path fill="#fff" d="M0,1920c0,0,93.4-934.4,0-1920h100.1v1920H0z"/>
+                              </svg>
+                            </figure>
+                            <figure class="d-lg-none mb-n1">
+                              <svg class="ie-curved-y position-absolute right-0 bottom-0 left-0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                                <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"/>
+                              </svg>
+                            </figure>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                          <div class="card-body d-flex flex-column h-100 p-4">
+                            <h2><a class="text-inherit" href="#">How Google Assistant now helps you record stories for kids</a></h2>
+                            <p>Google is constantly updating its consumer AI, Google Assistant, with new features.</p>
+                            <div class="media align-items-center mt-auto">
+                              <div class="avatar-group">
+                                <a class="avatar avatar-xs avatar-circle" href="#" data-toggle="tooltip" data-placement="top" title="Aaron Larsson">
+                                  <img class="avatar-img" src="@@autopath/assets/img/100x100/img3.jpg" alt="Image Description">
+                                </a>
+                                <a class="avatar avatar-xs avatar-circle" href="#" data-toggle="tooltip" data-placement="top" title="John O'nolan">
+                                  <img class="avatar-img" src="@@autopath/assets/img/100x100/img4.jpg" alt="Image Description">
+                                </a>
+                              </div>
+                              <div class="media-body d-flex justify-content-end text-muted font-size-1 ml-2">
+                                July 15
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <!-- End Blog Card -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+                      &lt;!-- Blog Card --&gt;
+                      &lt;div class="container"&gt;
+                        &lt;article class="card"&gt;
+                          &lt;div class="row no-gutters"&gt;
+                            &lt;div class="col-lg-8"&gt;
+                              &lt;div class="position-relative overflow-hidden"&gt;
+                                &lt;img class="card-img" src="@@autopath/assets/img/900x450/img2.jpg" alt="Image Description"&gt;
+                                &lt;figure class="d-none d-lg-block"&gt;
+                                  &lt;svg class="ie-curved-x position-absolute top-0 right-0 bottom-0 mr-n1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 100.1 1920" height="101%"&gt;
+                                    &lt;path fill="#fff" d="M0,1920c0,0,93.4-934.4,0-1920h100.1v1920H0z"/&gt;
+                                  &lt;/svg&gt;
+                                &lt;/figure&gt;
+                                &lt;figure class="d-lg-none mb-n1"&gt;
+                                  &lt;svg class="ie-curved-y position-absolute right-0 bottom-0 left-0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1"&gt;
+                                    &lt;path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"/&gt;
+                                  &lt;/svg&gt;
+                                &lt;/figure&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="col-lg-4"&gt;
+                              &lt;div class="card-body d-flex flex-column h-100 p-4"&gt;
+                                &lt;h2&gt;&lt;a class="text-inherit" href="#"&gt;How Google Assistant now helps you record stories for kids&lt;/a&gt;&lt;/h2&gt;
+                                &lt;p&gt;Google is constantly updating its consumer AI, Google Assistant, with new features.&lt;/p&gt;
+                                &lt;div class="media align-items-center mt-auto"&gt;
+                                  &lt;div class="avatar-group"&gt;
+                                    &lt;a class="avatar avatar-xs avatar-circle" href="#" data-toggle="tooltip" data-placement="top" title="Aaron Larsson"&gt;
+                                      &lt;img class="avatar-img" src="@@autopath/assets/img/100x100/img3.jpg" alt="Image Description"&gt;
+                                    &lt;/a&gt;
+                                    &lt;a class="avatar avatar-xs avatar-circle" href="#" data-toggle="tooltip" data-placement="top" title="John O'nolan"&gt;
+                                      &lt;img class="avatar-img" src="@@autopath/assets/img/100x100/img4.jpg" alt="Image Description"&gt;
+                                    &lt;/a&gt;
+                                  &lt;/div&gt;
+                                  &lt;div class="media-body d-flex justify-content-end text-muted font-size-1 ml-2"&gt;
+                                    July 15
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/article&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Blog Card --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <!-- End Tab Wrapper -->
+          </div>
+          <!-- End Component Block -->
+
+          <!-- Component Block -->
+          <div id="component-2" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Component #2 <a class="anchorjs-link" href="#component-2" data-anchorjs-icon="#"></a></h2>
+
+            <!-- Tab Wrapper -->
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <!-- Blog Card -->
+                  <div class="container">
+                    <article class="row align-items-lg-center">
+                      <div class="col-lg-8">
+                        <img class="img-fluid rounded-lg" src="@@autopath/assets/img/900x450/img1.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="py-5 px-lg-3">
+                          <span class="d-block mb-2">
+                            <a class="small text-body font-weight-bold text-cap" href="#">Business</a>
+                          </span>
+                          <h2><a class="text-inherit" href="#">Should Product Owners think like entrepreneurs?</a></h2>
+                          <p>Front is a financial technology company. We build products. We do it fast and we do it well.</p>
+                          <a href="#">Read more <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <!-- End Blog Card -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+                      &lt;!-- Blog Card --&gt;
+                      &lt;div class="container"&gt;
+                        &lt;article class="row align-items-lg-center"&gt;
+                          &lt;div class="col-lg-8"&gt;
+                            &lt;img class="img-fluid rounded-lg" src="@@autopath/assets/img/900x450/img1.jpg" alt="Image Description"&gt;
+                          &lt;/div&gt;
+
+                          &lt;div class="col-lg-4"&gt;
+                            &lt;div class="py-5 px-lg-3"&gt;
+                              &lt;span class="d-block mb-2"&gt;
+                                &lt;a class="small text-body font-weight-bold text-cap" href="#"&gt;Business&lt;/a&gt;
+                              &lt;/span&gt;
+                              &lt;h2&gt;&lt;a class="text-inherit" href="#"&gt;Should Product Owners think like entrepreneurs?&lt;/a&gt;&lt;/h2&gt;
+                              &lt;p&gt;Front is a financial technology company. We build products. We do it fast and we do it well.&lt;/p&gt;
+                              &lt;a href="#"&gt;Read more &lt;i class="fas fa-angle-right fa-sm ml-1"&gt;&lt;/i&gt;&lt;/a&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/article&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Blog Card --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <!-- End Tab Wrapper -->
+          </div>
+          <!-- End Component Block -->
+
+          <!-- Component Block -->
+          <div id="component-3" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Component #3 <a class="anchorjs-link" href="#component-3" data-anchorjs-icon="#"></a></h2>
+
+            <!-- Tab Wrapper -->
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-3" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-3" data-toggle="pill" href="#pills-result-3" role="tab" aria-controls="pills-result-3" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-3" data-toggle="pill" href="#pills-html-3" role="tab" aria-controls="pills-html-3" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-3">
+                <div class="tab-pane fade p-4 show active" id="pills-result-3" role="tabpanel" aria-labelledby="pills-result-tab-3">
+                  <!-- Blogs Section -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <!-- Blog -->
+                        <article class="row">
+                          <div class="col-md-5">
+                            <img class="card-img" src="@@autopath/assets/img/400x500/img7.jpg" alt="Image Description">
+                          </div>
+                          <div class="col-md-7">
+                            <div class="card-body d-flex flex-column h-100 px-0">
+                              <span class="d-block mb-2">
+                                <a class="font-weight-bold" href="#">Business</a>
+                              </span>
+                              <h3><a class="text-inherit" href="#">Front becomes an official Instagram Marketing Partner</a></h3>
+                              <p>Great news we're eager to share.</p>
+                              <div class="media align-items-center mt-auto">
+                                <a class="avatar avatar-sm avatar-circle mr-3" href="#">
+                                  <img class="avatar-img" src="@@autopath/assets/img/100x100/img3.jpg" alt="Image Description">
+                                </a>
+                                <div class="media-body">
+                                  <span class="text-dark">
+                                    <a class="d-inline-block text-inherit font-weight-bold" href="#">Aaron Larsson</a>
+                                  </span>
+                                  <small class="d-block">Feb 15, 2020</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <!-- End Blog -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Blogs Section -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-3" role="tabpanel" aria-labelledby="pills-html-tab-3">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+                      &lt;!-- Blogs Section --&gt;
+                      &lt;div class="container"&gt;
+                        &lt;div class="row"&gt;
+                          &lt;div class="col-lg-8"&gt;
+                            &lt;!-- Blog --&gt;
+                            &lt;article class="row"&gt;
+                              &lt;div class="col-md-5"&gt;
+                                &lt;img class="card-img" src="@@autopath/assets/img/400x500/img7.jpg" alt="Image Description"&gt;
+                              &lt;/div&gt;
+                              &lt;div class="col-md-7"&gt;
+                                &lt;div class="card-body d-flex flex-column h-100 px-0"&gt;
+                                  &lt;span class="d-block mb-2"&gt;
+                                    &lt;a class="font-weight-bold" href="#"&gt;Business&lt;/a&gt;
+                                  &lt;/span&gt;
+                                  &lt;h3&gt;&lt;a class="text-inherit" href="#"&gt;Front becomes an official Instagram Marketing Partner&lt;/a&gt;&lt;/h3&gt;
+                                  &lt;p&gt;Great news we're eager to share.&lt;/p&gt;
+                                  &lt;div class="media align-items-center mt-auto"&gt;
+                                    &lt;a class="avatar avatar-sm avatar-circle mr-3" href="#"&gt;
+                                      &lt;img class="avatar-img" src="@@autopath/assets/img/100x100/img3.jpg" alt="Image Description"&gt;
+                                    &lt;/a&gt;
+                                    &lt;div class="media-body"&gt;
+                                      &lt;span class="text-dark"&gt;
+                                        &lt;a class="d-inline-block text-inherit font-weight-bold" href="#"&gt;Aaron Larsson&lt;/a&gt;
+                                      &lt;/span&gt;
+                                      &lt;small class="d-block"&gt;Feb 15, 2020&lt;/small&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/article&gt;
+                            &lt;!-- End Blog --&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Blogs Section --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <!-- End Tab Wrapper -->
+          </div>
+          <!-- End Component Block -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-scroll-to-in-overflowed-container/dist/hs-scroll-to-in-overflowed-container.min.js"></script>
+  <script src="@@autopath/assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="@@autopath/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JSFront -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.slick-carousel.js"></script>
+  <script src="@@autopath/assets/js/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF SLICK CAROUSEL
+      // =======================================================
+      $('.js-slick-carousel').each(function() {
+        var slickCarousel = $.HSCore.components.HSSlickCarousel.init($(this));
+      });
+
+
+      // INITIALIZATION OF SCROLL TO IN OVERFLOWED CONTAINER
+      // =======================================================
+      var scrollToInOverflowedContainerNav = new HSScrollToInOverflowedContainer($('.hs-sidebar-sticky'), {
+        targetEl: "#snippetsSidebarNav .hs-sidebar-item.active"
+      }).init();
+    });
+
+    $(window).on('load', function () {
+      // INITIALIZATION OF AUTOCOMPLET
+      // =======================================================
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

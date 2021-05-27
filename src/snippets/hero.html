@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Hero - Snippets | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.googleFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/jquery-ui-dist/jquery-ui.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="@@autopath/assets/css/snippets.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        @@include('@@autopath/partials/snippets/header.html')
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="@@autopath/assets/json/snippets-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          @@include("@@autopath/partials/snippets/sidebar.html", {
+            "category": "",
+            "link": "hero.html"
+          })
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-1">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1>Hero</h1>
+            <p>To help you design even faster, there is a growing array of beautiful hero blocks to get you started.</p>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-1.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img27.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-1.html">Hero #1</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-2.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img28.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-2.html">Hero #2</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-3.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img29.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-3.html">Hero #3</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-4.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img30.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-4.html">Hero #4</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-5.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img31.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-5.html">Hero #5</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-6.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img32.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-6.html">Hero #6</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-7.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img33.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-7.html">Hero #7</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-8.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img34.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-8.html">Hero #8</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-9.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img35.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-9.html">Hero #9</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-10.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img36.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-10.html">Hero #10</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-11.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img37.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-11.html">Hero #11</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-12.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img38.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-12.html">Hero #12</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-13.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img39.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-13.html">Hero #13</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-14.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img40.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-14.html">Hero #14</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-15.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img41.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-15.html">Hero #15</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-16.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img42.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-16.html">Hero #16</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-17.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img43.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-17.html">Hero #17</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-18.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img44.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-18.html">Hero #18</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-19.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img45.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-19.html">Hero #19</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-20.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img46.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-20.html">Hero #20</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-21.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img47.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-21.html">Hero #21</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-22.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img48.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-22.html">Hero #22</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-23.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img49.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-23.html">Hero #23</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-24.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img50.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-24.html">Hero #24</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-25.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img51.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-25.html">Hero #25</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-26.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img52.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-26.html">Hero #26</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-27.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img53.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-27.html">Hero #27</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-28.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img54.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-28.html">Hero #28</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-29.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img55.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-29.html">Hero #29</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-30.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img56.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-30.html">Hero #30</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-31.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img57.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-31.html">Hero #31</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-32.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img58.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-32.html">Hero #32</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-33.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img59.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-33.html">Hero #33</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+
+            <div class="col-sm-6 col-lg-4 text-center mb-7">
+              <!-- Card -->
+              <a class="card transition-3d-hover p-1 mb-3" href="hero/hero-34.html" target="_blank">
+                <img class="img-fluid rounded" src="@@autopath/assets/img/documentation/img60.jpg" alt="Image Description">
+              </a>
+              <h3 class="mb-0">
+                <a class="text-inherit" href="hero/hero-34.html">Hero #34</a>
+              </h3>
+              <!-- End Card -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+  <script src="@@autopath/assets/vendor/prism/prism.js"></script>
+
+  <!-- JSFront -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+    });
+
+    $(window).on('load', function () {
+      // INITIALIZATION OF AUTOCOMPLET
+      // =======================================================
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<div id="searchSlideDown" class="hs-unfold-content dropdown-unfold search-slide-down">
+  <form>
+    <!-- Input Group -->
+    <div class="input-group input-group-borderless search-slide-down-input bg-white rounded mb-2">
+      <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fas fa-search"></i>
+          </span>
+      </div>
+      <input id="searchSlideDownControl" type="search" class="form-control" placeholder="Search Front" aria-label="Search Front">
+      <div class="input-group-append">
+        <a class="js-hs-search-unfold-invoker input-group-text" href="javascript:;"
+           data-hs-unfold-options='{
+               "target": "#searchSlideDown",
+               "type": "css-animation",
+               "animationIn": "fadeIn search-slide-down-show",
+               "animationOut": "fadeOutUp",
+               "cssAnimatedClass": null,
+               "hasOverlay": true,
+               "overlayClass": ".search-slide-down-bg-overlay",
+               "overlayStyles": {
+                 "background": "rgba(33, 50, 91, .7)"
+               },
+               "duration": 800,
+               "hideOnScroll": false
+             }'>
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <!-- End Input Group -->
+
+    <!-- Suggestions Content -->
+    <div class="rounded bg-white search-slide-down-suggestions py-3 px-5">
+      <ul class="list-unstyled list-sm-article mb-0">
+        <li><a href="#">About Front</a></li>
+        <li><a href="#">Getting Started</a></li>
+        <li><a href="#">Documentation</a></li>
+      </ul>
+    </div>
+    <!-- End Suggestions Content -->
+  </form>
+</div>

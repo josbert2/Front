@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Home Page | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.googleFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+  <link rel="stylesheet" href="@@autopath/assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
+  <link rel="stylesheet" href="@@autopath/node_modules/aos/dist/aos.css">
+
+  <!-- CSS Front Template -->
+  <!-- bundlecss:theme [@@autopath] @@vars.version -->
+  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/header/main-with-topbar-transparent-shadow-on-scroll.html", {
+    "category": "landings",
+    "subcategory": "",
+    "link": "index.html"
+  })
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="d-lg-flex position-relative">
+      <div class="container d-lg-flex align-items-lg-center space-top-2 space-lg-0 min-vh-lg-100">
+        <!-- Content -->
+        <div class="w-md-100">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="mb-5 mt-11">
+                <h1 class="display-4 mb-3">
+                  Transforma tu inventario en
+
+                  <span class="text-primary text-highlight-warning">
+                    <span class="js-text-animation"
+                          data-hs-typed-options='{
+                            "strings": ["ganancias.", "promociones."],
+                            "typeSpeed": 90,
+                            "loop": true,
+                            "backSpeed": 30,
+                            "backDelay": 2500
+                          }'></span>
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Content -->
+
+        <!-- SVG Shape -->
+        <figure class="col-lg-7 col-xl-6 d-none d-lg-block position-absolute top-0 right-0 pr-0 ie-main-hero" style="margin-top: 6.75rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1137.5 979.2">
+            <path fill="#F9FBFF" d="M565.5,957.4c81.1-7.4,155.5-49.3,202.4-115.7C840,739.8,857,570,510.7,348.3C-35.5-1.5-4.2,340.3,2.7,389
+              c0.7,4.7,1.2,9.5,1.7,14.2l29.3,321c14,154.2,150.6,267.8,304.9,253.8L565.5,957.4z"/>
+            <defs>
+              <path id="mainHeroSVG1" d="M1137.5,0H450.4l-278,279.7C22.4,430.6,24.3,675,176.8,823.5l0,0C316.9,960,537.7,968.7,688.2,843.6l449.3-373.4V0z"/>
+            </defs>
+            <clipPath id="mainHeroSVG2">
+              <use xlink:href="#mainHeroSVG1"/>
+            </clipPath>
+            <g transform="matrix(1 0 0 1 0 0)" clip-path="url(#mainHeroSVG2)">
+              <image width="750" height="750" xlink:href="@@autopath/assets/img/750x750/img2.jpg" transform="matrix(1.4462 0 0 1.4448 52.8755 0)"></image>
+            </g>
+          </svg>
+        </figure>
+        <!-- End SVG Shape -->
+      </div>
+    </div>
+    <!-- End Hero Section -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer/main-dark.html")
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up Modal -->
+  @@include("@@autopath/partials/modal/signup.html")
+  <!-- End Sign Up Modal -->
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- Go to Top -->
+  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-counter/dist/hs-counter.min.js"></script>
+  <script src="@@autopath/node_modules/appear/dist/appear.min.js"></script>
+  <script src="@@autopath/assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+  <script src="@@autopath/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="@@autopath/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+  <script src="@@autopath/node_modules/typed.js/lib/typed.min.js"></script>
+  <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.validation.js"></script>
+  <script src="@@autopath/assets/js/hs.cubeportfolio.js"></script>
+  <script src="@@autopath/assets/js/hs.typed.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
+
+
+      // INITIALIZATION OF UNFOLD
+      // =======================================================
+      var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
+      // =======================================================
+      var typed = $.HSCore.components.HSTyped.init(".js-text-animation");
+
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+
+
+      // INITIALIZATION OF FORM VALIDATION
+      // =======================================================
+      $('.js-validate').each(function() {
+        $.HSCore.components.HSValidation.init($(this), {
+          rules: {
+            confirmPassword: {
+              equalTo: '#signupPassword'
+            }
+          }
+        });
+      });
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      $('.js-animation-link').each(function () {
+        var showAnimation = new HSShowAnimation($(this)).init();
+      });
+
+
+      // INITIALIZATION OF COUNTER
+      // =======================================================
+      $('.js-counter').each(function() {
+        var counter = new HSCounter($(this)).init();
+      });
+
+
+      // INITIALIZATION OF STICKY BLOCK
+      // =======================================================
+      var cbpStickyFilter = new HSStickyBlock($('#cbpStickyFilter'));
+
+
+      // INITIALIZATION OF CUBEPORTFOLIO
+      // =======================================================
+      $('.cbp').each(function () {
+        var cbp = $.HSCore.components.HSCubeportfolio.init($(this), {
+          layoutMode: 'grid',
+          filters: '#filterControls',
+          displayTypeSpeed: 0
+        });
+      });
+
+      $('.cbp').on('initComplete.cbp', function() {
+        // update sticky block
+        cbpStickyFilter.update();
+      });
+
+      $('.cbp').on('filterComplete.cbp', function() {
+        // update sticky block
+        cbpStickyFilter.update();
+      });
+
+      $('.cbp').on('pluginResize.cbp', function() {
+        // update sticky block
+        cbpStickyFilter.update();
+      });
+
+      // animated scroll to cbp container
+      $('#cbpStickyFilter').on('click', '.cbp-filter-item', function (e) {
+        $('html, body').stop().animate({
+          scrollTop: $('#demoExamplesSection').offset().top
+        }, 200);
+      });
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="@@autopath/node_modules/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
+</body>
+</html>
