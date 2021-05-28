@@ -3,7 +3,7 @@ __MACOSX/
 .git/*
 .idea/*
 /node_modules/*
-/dist/*
-/build/*
+
+
 /preview/*
 /src/.tmp/*
