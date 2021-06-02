@@ -434,7 +434,11 @@
           <!-- Icon Blocks -->
           <div class="text-center px-lg-3 height-300px-mb">
             <figure class="max-w-10rem mx-auto mb-4 full-img-2">
-              <video src="./assets/img/REUNIONENRESTAURANTE.mp4" style="width: 100%;"  autoplay loop></video>
+              <video  style="width: 100%;"  autoplay loop>
+                <source src="./assets/img/REUNIONENRESTAURANTE.mp4" type="video/mp4" />
+              </video>
+
+              
             </figure>
           </div>
           <!-- End Icon Blocks -->
@@ -463,7 +467,9 @@
           <div class="text-center px-lg-3 height-300px-mb">
             <figure class="max-w-10rem mx-auto mb-4 full-img-2">
              
-              <video src="./assets/img/COCINANDO.mp4" style="width: 100%;"  autoplay loop></video>
+              <video src="./assets/img/COCINANDO.mp4" style="width: 100%;"  autoplay loop>
+                <source src="./assets/img/COCINANDO.mp4" type="video/mp4" />
+              </video>
             </figure>
           </div>
           <!-- End Icon Blocks -->
@@ -1197,7 +1203,7 @@
       // =======================================================
       var header = new HSHeader($('#header')).init();
 
-      AOS.init();
+     
 
       // INITIALIZATION OF MEGA MENU
       // =======================================================
@@ -1223,6 +1229,15 @@
       AOS.init({
         duration: 650,
         once: true
+      });
+
+
+      document.addEventListener('aos:in', ({ detail }) => {
+        console.log('animated in', detail);
+      });
+
+      document.addEventListener('aos:out', ({ detail }) => {
+        console.log('animated out', detail);
       });
 
 
