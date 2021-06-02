@@ -9,51 +9,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="@@autopath/assets/favicon/favicon.ico">
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
 
   <!-- Font -->
-  <link href="@@vars.googleFont" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <link rel="apple-touch-icon" sizes="57x57" href="@@autopath/assets/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="@@autopath/assets/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="@@autopath/assets/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="@@autopath/assets/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="@@autopath/assets/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="@@autopath/assets/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="@@autopath/assets/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="@@autopath/assets/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="@@autopath/assets/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="@@autopath/assets/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="@@autopath/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="@@autopath/assets/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="@@autopath/assets/icons/favicon-16x16.png">
-  <link rel="manifest" href="@@autopath/assets/icons/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/icons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="@@autopath/assets/icons/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
 
   <!-- CSS Implementing Plugins -->
-  <!-- bundlecss:vendor [@@autopath] -->
-  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
-  <link rel="stylesheet" href="@@autopath/assets/vendor/dzsparallaxer/dzsparallaxer.css">
-  <link rel="stylesheet" href="@@autopath/assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
-  <link rel="stylesheet" href="@@autopath/node_modules/aos/dist/aos.css">
+  <!-- bundlecss:vendor [.] -->
+  <link rel="stylesheet" href="./assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="./assets/vendor/dzsparallaxer/dzsparallaxer.css">
+  <link rel="stylesheet" href="./assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- CSS Front Template -->
-  <!-- bundlecss:theme [@@autopath] @@vars.version -->
-  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <!-- bundlecss:theme [.] ?v=1.0 -->
+  <link rel="stylesheet" href="./assets/css/theme.css">
 </head>
 
 <body>
   <!-- ========== HEADER ========== -->
-  @@include("@@autopath/partials/header/main-with-topbar-transparent-shadow-on-scroll.html", {
-    "category": "landings",
-    "subcategory": "",
-    "link": "index.html"
-  })
+  <header id="header" class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
+          data-hs-header-options='{
+            "fixMoment": 1000,
+            "fixEffect": "slide"
+          }'>
+
+    <div class="header-section">
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-lg">
+          <!-- Logo -->
+          <a class="navbar-brand" href="./index.html" aria-label="Front">
+            <img src="./assets/img/LOGO.png" height="80px" width="80px" alt="Logo">
+            <span class="ml-3">Savefood</span>
+          </a>
+          <!-- End Logo -->
+
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle"
+                  aria-label="Toggle navigation"
+                  aria-expanded="false"
+                  aria-controls="navBar"
+                  data-toggle="collapse"
+                  data-target="#navBar">
+            <span class="navbar-toggler-default">
+              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+              </svg>
+            </span>
+            <span class="navbar-toggler-toggled">
+              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+              </svg>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse">
+            <div class="navbar-body header-abs-top-inner">
+              <ul class="navbar-nav">
+                <!-- Empresa -->
+                <li class="hs-has-sub-menu navbar-nav-item">
+                  <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Empresa</a>
+
+                  <!-- Empresa - Submenu -->
+                  <div id="blogSubMenu" class="hs-sub-menu dropdown-menu scroll-link" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
+                    <a class="dropdown-item " href="./blog-journal.html">Informacion de Savefood</a>
+                    <a class="dropdown-item " href="#antecedentes">Antecedentes</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item " href="#sobre-nosotros">Sobre Nosotros</a>
+                    <a class="dropdown-item " href="">Aplicación Móvil</a>
+                  </div>
+                  <!-- End Submenu -->
+                </li>
+                <!-- End Empresa -->
+
+                <!-- Contactanos -->
+                <li class="nav-item scroll-link">
+                  <a class="nav-link" href="#contactanos">Contactanos</a>
+                </li>
+                <!-- End Contactanos -->
+
+                <!-- Ayuda -->
+                <li class="hs-has-sub-menu navbar-nav-item">
+                  <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Ayuda</a>
+
+                  <!-- Ayuda - Submenu -->
+                  <div id="blogSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
+                    <a class="dropdown-item " href="./blog-metro.html">¿Cómo funciona?</a>
+                    <a class="dropdown-item " href="./blog-metro.html">Requisitos del Comercio</a>
+                    <a class="dropdown-item " href="./page-faq.htmll">Preguntas Frecuentes</a>
+                  </div>
+                  <!-- End Submenu -->
+                </li>
+                <!-- End Ayuda -->
+
+                <!-- Legal -->
+                <li class="hs-has-sub-menu navbar-nav-item">
+                  <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Legal</a>
+
+                  <!-- Legal - Submenu -->
+                  <div id="blogSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
+                    <a class="dropdown-item " href="./blog-metro.html">Políticas de Privacidad</a>
+                    <a class="dropdown-item " href="./blog-metro.html">Polítias de Términos y Condiciones</a>
+                    <a class="dropdown-item " href="./page-faq.htmll">Políticas de Cookies</a>
+                  </div>
+                  <!-- End Submenu -->
+                </li>
+                <!-- End Legal -->
+
+                <!-- Iniciar Sesion -->
+                <li class="navbar-nav-last-item">
+                  <a class="btn btn-sm btn-primary transition-3d-hover" href="http://app.savefood.store/login">Iniciar Session</a>
+                </li>
+                <!-- End Iniciar Sesion -->
+              </ul>
+            </div>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
@@ -66,7 +166,7 @@
           <div class="row">
             <div class="col-lg-5">
               <div class="mb-5 mt-11">
-                <h1 class="display-4 mb-3">
+                <h1 class="display-4 mb-3 p-asbolute-max">
                   Transforma tu excedente de productos en
 
                   <span class="text-primary text-highlight-warning">
@@ -98,7 +198,7 @@
               <use xlink:href="#mainHeroSVG1"/>
             </clipPath>
             <g transform="matrix(1 0 0 1 0 0)" clip-path="url(#mainHeroSVG2)">
-              <image width="750" height="750" xlink:href="@@autopath/assets/img/750x750/img2.jpg" transform="matrix(1.4462 0 0 1.4448 52.8755 0)"></image>
+              <image width="750" height="750" xlink:href="./assets/img/750x750/img2.jpg" transform="matrix(1.4462 0 0 1.4448 52.8755 0)"></image>
             </g>
           </svg>
         </figure>
@@ -106,13 +206,13 @@
       </div>
     </div>
     <!-- End Hero Section -->
-    <div class="overflow-hidden">
+    <div class="overflow-hidden m-t-205-max" id="sobre-nosotros">
       <div class="container space-top-1 space-top-md-2 space-bottom-3">
           <div class="row justify-content-lg-between align-items-md-center">
               <div class="col-md-7 col-lg-5 mb-7 mb-md-0">
                   <div class="mb-5">
                  
-                      <h4 class="display-5 mb-3">ACERCA DE <strong class="color-principal">SAVEFOOD</strong></h4>
+                      <h4 class="display-5 mb-3">ACERCA DE <strong class="color-principal">NOSOTROS</strong></h4>
                       <p class="lead">Iniciativa para reducir el excedente de  <br> alimentosgenerado por los restaurantes, supermercados, <br> hoteles, pastelerías panaderías y todo tipo de <br> surtidores de productos alimenticos.</p>
                   </div>
                   <a
@@ -164,7 +264,7 @@
           <!-- End Icon Blocks -->
         </div>
 
-        <div class="col-md-4 mb-5 mb-md-0"  data-aos="fade-up" data-aos-offset="400" data-aos-delay="200">
+        <div class="col-md-4 mb-5 mb-md-0"  data-aos="fade-up" data-aos-delay="200">
           <!-- Icon Blocks -->
           <div class="text-center px-lg-3">
             <figure class="max-w-10rem mx-auto mb-4 full-img">
@@ -179,7 +279,7 @@
 
         <div class="col-md-4">
           <!-- Icon Blocks -->
-          <div class="text-center px-lg-3"  data-aos="fade-up" data-aos-offset="600"    data-aos-delay="300">
+          <div class="text-center px-lg-3"  data-aos="fade-up"    data-aos-delay="300">
             <figure class="max-w-10rem mx-auto mb-4 full-img">
               <img class="img-fluid" src="https://ucarecdn.com/1d140a38-c538-4b54-b3ae-604535aa79fe/Imagen11.png" alt="SVG">
             </figure>
@@ -193,9 +293,52 @@
     </div>
     <!-- End Icon Blocks Section -->
 
+     <!-- Icon Blocks Section -->
+     <div class="container space-2 space-lg-3" id="antecedentes">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9" data-aos="fade-up"   data-aos-delay="400">
+      
+        <h2 class="h1" >Antecedentes</h2>
+      </div>
+      <!-- End Title -->
+
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center flex-column">
+          <p style="" class="p-line-hea">300 millones de toneladas de comida son  desperdiciadas cada año en el mundo, mientras que  estimaciones del PNUMA revelaron que en Guatemala  la cifra asciende a las 52 mil toneladas anuales; la  mayoría de la comida se pierde en la fase de  procesamiento y transporte o porque la industria  alimenticia no logra venderla antes de su  descomposición.
+          </p>
+          <div class=" wrapper-div" style="width:100%">
+            <div class="d-flex align-items-center" style="width:100%">
+              <div class="rounder-div">
+              
+              </div>
+              <div class="rounder-line">
+              
+              </div>
+              <div class="rounder-div">
+              
+              </div>
+            </div>
+            <div class="color-principal mt-2 text-center" style="font-weight: 900;font-size: 22px;">
+              Ayuda a reducir el despercio de alimentos
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="https://ucarecdn.com/a97345b4-5476-4fa5-89c1-4f7330dc1da8/Imagen1.png" alt="" style="    height: 400px;">
+        </div>
+       
+
+       
+
+        
+      </div>
+    </div>
+    <!-- End Icon Blocks Section -->
+
 
     <!-- Icon Blocks Section -->
-    <div class="container space-2 space-lg-3">
+    <div class="container space-2 space-lg-1">
       <!-- Title -->
       <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9" data-aos="fade-up"   data-aos-delay="400">
       
@@ -203,14 +346,14 @@
       </div>
       <!-- End Title -->
 
-      <div class="row">
+      <div class="row m-t-70-max">
         <div class="col-sm-6 col-lg-6 px-lg-5 mb-5" data-aos="fade-up"   data-aos-delay="500">
           <!-- Pricing -->
           <div class="position-relative">
             <div class="card shadow-lg h-100">
               <!-- Header -->
               <div class="card-header border-0 text-center">
-                <span class="d-block h3 mb-0">Tabla de beneficios</span>
+                <span class="d-block h3 mb-0"></span>
                 <span class="d-block">
                 
                  
@@ -289,7 +432,7 @@
         </div>
         <div class="col-md-6 " data-aos="fade-up"   data-aos-delay="600">
           <!-- Icon Blocks -->
-          <div class="text-center px-lg-3">
+          <div class="text-center px-lg-3 height-300px-mb">
             <figure class="max-w-10rem mx-auto mb-4 full-img-2">
               <video src="./assets/img/REUNIONENRESTAURANTE.mp4" style="width: 100%;"  autoplay loop></video>
             </figure>
@@ -306,7 +449,7 @@
 
 
     <!-- Icon Blocks Section -->
-    <div class="container space-2 space-lg-3">
+    <div class="container space-2 space-lg-1">
       <!-- Title -->
       <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9" data-aos="fade-up"   data-aos-delay="600">
       
@@ -314,10 +457,10 @@
       </div>
       <!-- End Title -->
 
-      <div class="row">
+      <div class="row m-t-25-max">
         <div class="col-md-6 " data-aos="fade-up"   data-aos-delay="700">
           <!-- Icon Blocks -->
-          <div class="text-center px-lg-3">
+          <div class="text-center px-lg-3 height-300px-mb">
             <figure class="max-w-10rem mx-auto mb-4 full-img-2">
              
               <video src="./assets/img/COCINANDO.mp4" style="width: 100%;"  autoplay loop></video>
@@ -331,7 +474,7 @@
             <div class="card shadow-lg h-100">
               <!-- Header -->
               <div class="card-header border-0 text-center">
-                <span class="d-block h3 mb-0">Tabla de beneficios</span>
+                <span class="d-block h3 mb-0"></span>
                 <span class="d-block">
                 
                  
@@ -433,8 +576,8 @@
         <div class="text-center py-11 px-5 px-sm-9">
           <header class="mb-9" data-aos="fade-up"   data-aos-delay="200">
               <!-- Icon Block -->
-              <figure class="max-w-8rem mx-auto mb-2">
-                <img class="img-fluid" src="@@autopath/assets/img/imagen1.png" alt="SVG">
+              <figure class="max-w-15rem mx-auto mb-2">
+                <img class="img-fluid" src="./assets/img/imagen1.png" alt="SVG" style="width:100%;height: 100%;">
               </figure>
               <h4>Compromiso:</h4>
               <!-- End Icon Block -->
@@ -444,8 +587,8 @@
           <div class="row justify-content-sm-center align-items-sm-center mb-5">
             <div class="col-sm-5" data-aos="fade-up"   data-aos-delay="400">
               <!-- Icon Block -->
-              <figure class="max-w-8rem mx-auto mb-2">
-                <img class="img-fluid" src="@@autopath/assets/img/imagen6.png" alt="SVG">
+              <figure class="max-w-15rem mx-auto mb-2">
+                <img class="img-fluid" src="./assets/img/imagen6.png" alt="SVG" style="width:100%;height: 100%;">
               </figure>
               <h4>Solidaridad:</h4>
               <!-- End Icon Block -->
@@ -457,8 +600,8 @@
 
             <div class="col-sm-5" data-aos="fade-up"   data-aos-delay="600">
               <!-- Icon Block -->
-              <figure class="max-w-8rem mx-auto mb-2">
-                <img class="img-fluid" src="@@autopath/assets/img/imagen7.png" alt="SVG">
+              <figure class="max-w-15rem mx-auto mb-2">
+                <img class="img-fluid" src="./assets/img/imagen7.png" alt="SVG" style="width:100%;height: 100%;">
               </figure>
               <h4>Amor:</h4>
               <!-- End Icon Block -->
@@ -518,7 +661,7 @@
   </div>
   <!-- End Pricing Section -->
   <!-- Contact Form Section -->
-  <div class="container space-top-3 space-top-lg-4 space-bottom-2">
+  <div class="container space-top-3 space-top-lg-4 space-bottom-2" id="contactano">
     <div class="row">
       <div class="col-lg-6 mb-9 mb-lg-0">
         <div class="mb-5">
@@ -590,46 +733,461 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  @@include("@@autopath/partials/footer/main-dark.html")
+  <footer class="bg-dark">
+    <div class="container">
+      <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
+        <div class="row justify-content-lg-between">
+          <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
+            <!-- Start Play Store App -->
+            <div class="mb-4">
+              <a href="https://play.google.com/store/apps/details?id=com.savefood.store" aria-label="Front">
+                <img src="./assets/svg/badge/google-play-badge.png" alt="Logo" style="width: 100%; max-width: 11.5rem;">
+              </a>
+            </div>
+            <!-- End Play Store App -->
+
+            <!-- Start App Store App -->
+            <div class="mb-4">
+              <a href="https://play.google.com/store/apps/details?id=com.savefood.store" aria-label="Front">
+                <img src="./assets/svg/badge/apple-store-badge.svg" alt="Logo" style="width: 100%; max-width: 11.5rem;">
+              </a>
+            </div>
+            <!-- End App Store App -->
+          </div>
+
+          <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
+            <h5 class="text-white">Empresa</h5>
+
+            <!-- Nav Link -->
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Acerca de</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sala de Prensa</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Vacantes</a></li>
+            </ul>
+            <!-- End Nav Link -->
+          </div>
+
+          <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
+            <h5 class="text-white">Features</h5>
+
+            <!-- Nav Link -->
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">Press</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Release notes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Integrations</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            </ul>
+            <!-- End Nav Link -->
+          </div>
+
+          <div class="col-6 col-md-3 col-lg">
+            <h5 class="text-white">Ayuda</h5>
+
+            <!-- Nav Link -->
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">Manual de usuario</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Manual de comercio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Requisitos del comercio</a></li>
+            </ul>
+            <!-- End Nav Link -->
+          </div>
+
+          <div class="col-6 col-md-3 col-lg">
+            <h5 class="text-white">Contacto</h5>
+
+            <!-- Nav Link -->
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="media align-items-center">
+                      <i class="fa fa-phone mr-2"></i>
+                      <span class="media-body">+502 2339-0957</span>
+                    </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="media align-items-center">
+                      <i class="fa fa-mobile-alt mr-2"></i>
+                      <span class="media-body">+502 5012-1972</span>
+                    </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="media align-items-center">
+                      <i class="fa fa-map mr-2"></i>
+                      <span class="media-body">Avenida Reforma 1-90, Edificio Torre Masval Nivel
+                        12 Guatemala, Guatemala.
+                        </span>
+                    </span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Nav Link -->
+          </div>
+        </div>
+      </div>
+
+      <hr class="opacity-xs my-0">
+
+      <div class="space-1">
+        <div class="row align-items-md-center mb-7">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <!-- Nav Link -->
+            <ul class="nav nav-sm nav-white nav-x-sm align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Privacy &amp; Policy</a>
+              </li>
+              <li class="nav-item opacity mx-3">&#47;</li>
+              <li class="nav-item">
+                <a class="nav-link" href="terminos.html">Terminos y condiciones</a>
+              </li>
+              <li class="nav-item opacity mx-3">&#47;</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Site Map</a>
+              </li>
+            </ul>
+            <!-- End Nav Link -->
+          </div>
+
+          <div class="col-md-6 text-md-right">
+            <ul class="list-inline mb-0">
+              <!-- Social Networks -->
+              <li class="list-inline-item">
+                <a class="btn btn-xs btn-icon btn-soft-light" href="https://www.facebook.com/savefood.store">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-xs btn-icon btn-soft-light" href="https://www.instagram.com/savefood.store/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-xs btn-icon btn-soft-light" href="https://wa.me/message/V2VDBFIYHVYKK1">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-xs btn-icon btn-soft-light" href="https://www.youtube.com/channel/UCErVXZ8pIhufeqDs-NjUNpg">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <!-- End Social Networks -->
+
+              <!-- Language -->
+             <!-- <li class="list-inline-item">
+                <div class="hs-unfold">
+                  <a class="js-hs-unfold-invoker dropdown-toggle btn btn-xs btn-soft-light" href="javascript:;"
+                     data-hs-unfold-options='{
+                        "target": "#footerLanguage",
+                        "type": "css-animation",
+                        "animationIn": "slideInDown"
+                       }'>
+                    <img class="dropdown-item-icon" src="./node_modules/flag-icon-css/flags/4x3/us.svg" alt="United States Flag">
+                    <span>United States</span>
+                  </a>
+
+                  <div id="footerLanguage" class="hs-unfold-content dropdown-menu dropdown-unfold dropdown-menu-bottom mb-2">
+                    <a class="dropdown-item active" href="#">English</a>
+                    <a class="dropdown-item" href="#">Deutsch</a>
+                    <a class="dropdown-item" href="#">Español</a>
+                    <a class="dropdown-item" href="#">Français</a>
+                    <a class="dropdown-item" href="#">Italiano</a>
+                    <a class="dropdown-item" href="#">日本語</a>
+                    <a class="dropdown-item" href="#">한국어</a>
+                    <a class="dropdown-item" href="#">Nederlands</a>
+                    <a class="dropdown-item" href="#">Português</a>
+                    <a class="dropdown-item" href="#">Русский</a>
+                  </div>
+                </div>
+              </li>-->
+              <!-- End Language -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="w-md-75 text-lg-center mx-lg-auto">
+          <p class="text-white opacity-sm small">&copy; 2020 SaveFood. All rights reserved.</p>
+     
+        </div>
+        <!-- End Copyright -->
+      </div>
+    </div>
+  </footer>
   <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
   <!-- Sign Up Modal -->
-  @@include("@@autopath/partials/modal/signup.html")
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- Header -->
+        <div class="modal-close">
+          <button type="button" class="btn btn-icon btn-sm btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+            <svg width="10" height="10" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+            </svg>
+          </button>
+        </div>
+        <!-- End Header -->
+
+        <!-- Body -->
+        <div class="modal-body p-sm-5">
+          <form class="js-validate">
+            <!-- Sign in -->
+            <div id="signinModalForm">
+              <div class="text-center mb-5">
+                <h2>Sign in</h2>
+                <p>Don't have an account yet?
+                  <a class="js-animation-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalForm",
+                         "groupName": "idForm"
+                       }'>Sign up here</a>
+                </p>
+              </div>
+
+              <a class="btn btn-block btn-white mb-2" href="#">
+                  <span class="d-flex justify-content-center align-items-center">
+                    <img class="avatar avatar-xss mr-2" src="./assets/svg/brands/google.svg" alt="Image Description">
+                    Sign in with Google
+                  </span>
+              </a>
+
+              <a class="js-animation-link btn btn-block btn-primary mb-2" href="#"
+                 data-hs-show-animation-options='{
+                     "targetSelector": "#signinWithEmailModalForm",
+                     "groupName": "idForm"
+                   }'>Sign in with Email</a>
+            </div>
+            <!-- End Sign in -->
+
+            <!-- Sign in with Modal -->
+            <div id="signinWithEmailModalForm" style="display: none; opacity: 0;">
+              <div class="text-center mb-5">
+                <h2>Sign in</h2>
+                <p>Don't have an account yet?
+                  <a class="js-animation-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalForm",
+                         "groupName": "idForm"
+                       }'>Sign up here</a>
+                </p>
+              </div>
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signinModalFormSrEmail">Your email</label>
+                <input type="email" class="form-control" name="email" id="signinModalFormSrEmail" placeholder="email@address.com" aria-label="email@address.com" required data-msg="Please enter a valid email address.">
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signinModalFormSrPassword">
+                    <span class="d-flex justify-content-between align-items-center">
+                      Password
+                      <a class="js-animation-link link text-muted" href="javascript:;"
+                         data-hs-show-animation-options='{
+                           "targetSelector": "#forgotPasswordModalForm",
+                           "groupName": "idForm"
+                         }'>Forgot Password?</a>
+                    </span>
+                </label>
+                <input type="password" class="form-control" name="password" id="signinModalFormSrPassword" placeholder="8+ characters required" aria-label="8+ characters required" required data-msg="Your password is invalid. Please try again.">
+              </div>
+              <!-- End Form Group -->
+
+              <button type="submit" class="btn btn-block btn-primary">Sign in</button>
+            </div>
+            <!-- End Sign in with Modal -->
+
+            <!-- Sign up -->
+            <div id="signupModalForm" style="display: none; opacity: 0;">
+              <div class="text-center mb-5">
+                <h2>Sign up</h2>
+                <p>Already have an account?
+                  <a class="js-animation-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signinModalForm",
+                         "groupName": "idForm"
+                       }'>Sign in here</a>
+                </p>
+              </div>
+
+              <a class="btn btn-block btn-white mb-2" href="#">
+                  <span class="d-flex justify-content-center align-items-center">
+                    <img class="avatar avatar-xss mr-2" src="./assets/svg/brands/google.svg" alt="Image Description">
+                    Sign up with Google
+                  </span>
+              </a>
+
+              <a class="js-animation-link btn btn-block btn-primary mb-2" href="#"
+                 data-hs-show-animation-options='{
+                     "targetSelector": "#signupWithEmailModalForm",
+                     "groupName": "idForm"
+                   }'>Sign up with Email</a>
+
+              <div class="text-center mt-3">
+                <p class="font-size-1 mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+              </div>
+            </div>
+            <!-- End Sign up -->
+
+            <!-- Sign up with Modal -->
+            <div id="signupWithEmailModalForm" style="display: none; opacity: 0;">
+              <div class="text-center mb-5">
+                <h2>Sign up</h2>
+                <p>Already have an account?
+                  <a class="js-animation-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signinModalForm",
+                         "groupName": "idForm"
+                       }'>Sign in here</a>
+                </p>
+              </div>
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signupModalFormSrEmail">Your email</label>
+                <input type="email" class="form-control" name="email" id="signupModalFormSrEmail" placeholder="email@address.com" aria-label="email@address.com" required data-msg="Please enter a valid email address.">
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signupModalFormSrPassword">Password</label>
+                <input type="password" class="form-control" name="password" id="signupModalFormSrPassword" placeholder="8+ characters required" aria-label="8+ characters required" required data-msg="Your password is invalid. Please try again.">
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signupModalFormSrConfirmPassword">Confirm password</label>
+                <input type="password" class="form-control" name="confirmPassword" id="signupModalFormSrConfirmPassword" placeholder="8+ characters required" aria-label="8+ characters required" required data-msg="Password does not match the confirm password.">
+              </div>
+              <!-- End Form Group -->
+
+              <button type="submit" class="btn btn-block btn-primary">Sign up</button>
+
+              <div class="text-center mt-3">
+                <p class="font-size-1 mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+              </div>
+            </div>
+            <!-- End Sign up with Modal -->
+
+            <!-- Forgot Password -->
+            <div id="forgotPasswordModalForm" style="display: none; opacity: 0;">
+              <div class="text-center mb-5">
+                <h2>Forgot password?</h2>
+                <p>Enter the email address you used when you joined and we'll send you instructions to reset your password.</p>
+              </div>
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="resetPasswordSrEmail" tabindex="0">
+                  <span class="d-flex justify-content-between align-items-center">
+                    Your email
+                    <a class="js-animation-link d-flex align-items-center link text-muted" href="javascript:;"
+                       data-hs-show-animation-options='{
+                         "targetSelector": "#signinModalForm",
+                         "groupName": "idForm"
+                       }'>
+                      <i class="fas fa-angle-left mr-2"></i> Back to Sign in
+                    </a>
+                  </span>
+                </label>
+                <input type="email" class="form-control" name="email" id="resetPasswordSrEmail" tabindex="1" placeholder="Enter your email address" aria-label="Enter your email address" required data-msg="Please enter a valid email address.">
+              </div>
+              <!-- End Form Group -->
+
+              <button type="submit" class="btn btn-block btn-primary">Submit</button>
+            </div>
+            <!-- End Forgot Password -->
+          </form>
+        </div>
+        <!-- End Body -->
+
+        <!-- Footer -->
+        <div class="modal-footer d-block text-center py-sm-5">
+          <small class="text-cap mb-4">Trusted by the world's best teams</small>
+
+          <div class="w-85 mx-auto">
+            <div class="row justify-content-between">
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/gitlab-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/fitbit-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/flow-xo-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/layar-gray.svg" alt="Image Description">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </div>
   <!-- End Sign Up Modal -->
   <!-- ========== END SECONDARY CONTENTS ========== -->
 
   <!-- Go to Top -->
-  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
   <!-- End Go to Top -->
 
-  <!-- JS Global Compulsory @@deleteLine:build -->
-  <script src="@@autopath/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="@@autopath/node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
-  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS Global Compulsory hs-builder:build-delete -->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- JS Implementing Plugins -->
-  <!-- bundlejs:vendor [@@autopath] -->
-  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
-  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
-  <script src="@@autopath/assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
-  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
-  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
-  <script src="@@autopath/assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
-  <script src="@@autopath/assets/vendor/hs-counter/dist/hs-counter.min.js"></script>
-  <script src="@@autopath/node_modules/appear/dist/appear.min.js"></script>
-  <script src="@@autopath/assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-  <script src="@@autopath/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
-  <script src="@@autopath/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-  <script src="@@autopath/node_modules/typed.js/lib/typed.min.js"></script>
-  <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <!-- bundlejs:vendor [.] -->
+  <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="./assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+  <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="./assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="./assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
+  <script src="./assets/vendor/hs-counter/dist/hs-counter.min.js"></script>
+  <script src="./node_modules/appear/dist/appear.min.js"></script>
+  <script src="./assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+  <script src="./node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="./assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+  <script src="./node_modules/typed.js/lib/typed.min.js"></script>
+  <script src="./node_modules/aos/dist/aos.js"></script>
 
   <!-- JS Front -->
-  <!-- bundlejs:theme [@@autopath] -->
-  <script src="@@autopath/assets/js/hs.core.js"></script>
-  <script src="@@autopath/assets/js/hs.validation.js"></script>
-  <script src="@@autopath/assets/js/hs.cubeportfolio.js"></script>
-  <script src="@@autopath/assets/js/hs.typed.js"></script>
+  <!-- bundlejs:theme [.] -->
+  <script src="./assets/js/hs.core.js"></script>
+  <script src="./assets/js/hs.validation.js"></script>
+  <script src="./assets/js/hs.cubeportfolio.js"></script>
+  <script src="./assets/js/hs.typed.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- JS Plugins Init. -->
@@ -682,7 +1240,7 @@
 
       //Scroll ON Click
 
-      $(document).on('click', 'scroll-link a[href^="#"]', function(e) {
+      $(document).on('click', '.scroll-link a[href^="#"]', function(e) {
         // target element id
         var id = $(this).attr('href');
 
@@ -765,7 +1323,7 @@
 
   <!-- IE Support -->
   <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="@@autopath/node_modules/babel-polyfill/dist/polyfill.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./node_modules/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
 </body>
 </html>
