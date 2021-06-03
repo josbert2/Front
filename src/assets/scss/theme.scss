@@ -50,6 +50,9 @@
   }
 }
 @media (min-width: 768px){
+  .nonde-max{
+    display:none
+  }
   .wrapper-div{
     display: none;
   }
@@ -92,7 +95,9 @@
     filter: url('#squiggly-4');
   }
 }
-
+.z-index-99{
+  z-index:99
+}
 @media (max-width: 768px){
 
   .test1{

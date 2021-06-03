@@ -16224,8 +16224,8 @@ button:focus {
 }
 
 .avatar-lg.avatar-circle .avatar-lg-status {
-  bottom: -0.20313rem;
-  right: -0.20313rem;
+  bottom: -0.20312rem;
+  right: -0.20312rem;
 }
 
 .avatar-xl {
@@ -24197,6 +24197,9 @@ a:hover .text-hover-primary {
 }
 
 @media (min-width: 768px) {
+  .nonde-max {
+    display: none;
+  }
   .wrapper-div {
     display: none;
   }
@@ -24278,6 +24281,10 @@ a:hover .text-hover-primary {
     -webkit-filter: url("#squiggly-4");
             filter: url("#squiggly-4");
   }
+}
+
+.z-index-99 {
+  z-index: 99;
 }
 
 @media (max-width: 768px) {
