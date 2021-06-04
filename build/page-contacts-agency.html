@@ -19,6 +19,7 @@
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="./assets/css/theme.min.css?v=1.0">
+  <link rel="stylesheet" href="https://www.jqueryscript.net/demo/jQuery-International-Telephone-Input-With-Flags-Dial-Codes/build/css/intlTelInput.css">
 </head>
 <body>
   <!-- ========== HEADER ========== -->
@@ -191,9 +192,9 @@
             <!-- Input -->
             <div class="col-sm-6 mb-4">
               <div class="js-form-message">
-                <label class="input-label">Número Telefonico</label>
-                <input type="number" class="form-control" name="phone" placeholder="56781234" aria-label="56781234" required
-                       data-msg="Porfavor ingrese un número de telefono">
+                <label class="input-label">Número de teléfono</label>
+                <input type="tel" id="mobile-number" class="form-control" placeholder="e.g. +1 702 123 4567" style="    height: 51px;
+                border-radius: 3px;">
               </div>
             </div>
             <!-- End Input -->
@@ -657,14 +658,14 @@
 
   <!-- JS Front -->
   <script src="./assets/js/theme.min.js"></script>
-
+  <script src="https://www.jqueryscript.net/demo/jQuery-International-Telephone-Input-With-Flags-Dial-Codes/build/js/intlTelInput.js"></script>
   <!-- JS Plugins Init. -->
   <script>
     $(document).on('ready', function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       var header = new HSHeader($('#header')).init();
-
+      $("#mobile-number").intlTelInput();
 
       // INITIALIZATION OF MEGA MENU
       // =======================================================

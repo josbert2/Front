@@ -16224,8 +16224,8 @@ button:focus {
 }
 
 .avatar-lg.avatar-circle .avatar-lg-status {
-  bottom: -0.20312rem;
-  right: -0.20312rem;
+  bottom: -0.20313rem;
+  right: -0.20313rem;
 }
 
 .avatar-xl {
@@ -24210,19 +24210,22 @@ a:hover .text-hover-primary {
   .test1 {
     height: 400px;
     position: absolute;
-    right: 171px;
+    right: 229px;
     top: -110px;
+  }
+  .intl-tel-input .flag-dropdown {
+    height: 100%;
   }
   .test2 {
     height: 400px;
     position: absolute;
-    right: 104px;
+    right: 153px;
     top: -106px;
   }
   .test3 {
     height: 400px;
     position: absolute;
-    right: 80px;
+    right: 117px;
     top: -142px;
   }
 }
@@ -24287,7 +24290,73 @@ a:hover .text-hover-primary {
   z-index: 99;
 }
 
+.container-btn-politicas button {
+  background: #e2e2e2fc;
+  border: none;
+  padding: 4px 20px;
+  border-radius: 7px;
+  transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.container-btn-politicas button.active {
+  background-color: #ec6434;
+  color: #fff;
+}
+
+.container-btn-politicas button.active.close-cookie {
+  background-color: #ed4c78;
+  color: #FFF;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 807px;
+    margin: 1.75rem auto;
+  }
+}
+
 @media (max-width: 768px) {
+  .tab-pane.p-4 {
+    padding: 0 !important;
+  }
+  .m-t-20-max {
+    margin-top: 20px;
+  }
+  .btn.collapsed > .row {
+    margin: 0;
+    width: 100%;
+  }
+  .btn.collapsed > .row .col-8 {
+    -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .btn.collapsed > .row .media-body {
+    width: 100%;
+  }
+  .container-btn-politicas {
+    display: -ms-flexbox;
+    display: flex;
+    grid-gap: 20px;
+  }
+  .container-btn-politicas button {
+    width: 100%;
+  }
+  #cookiebarBox .container {
+    padding: 18px 16px !important;
+  }
+  .risk-dismiss .col-md-4 {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #cookieBoxok {
+    width: 100%;
+  }
+  #cookieBoxok {
+    width: 100%;
+  }
   .test1 {
     height: 400px;
     position: absolute;
@@ -24416,7 +24485,7 @@ video {
   background-color: #f1f1f1;
   color: #ec6434;
   text-align: center;
-  padding: 10px;
+  padding: 18px 66px;
   overflow: hidden;
   width: 100% !important;
   max-width: 100% !important;

@@ -60,15 +60,24 @@
     line-height: 41px;font-size: 17px;
   }
   .test1{
-    height: 400px;position: absolute;        right: 171px;
+    height: 400px;
+    position: absolute;      
+    right: 229px;
     top: -110px;
   }
+  .intl-tel-input .flag-dropdown{
+    height: 100%;
+  }
   .test2{
-    height: 400px;position: absolute;    right: 104px;
+    height: 400px;
+    position: absolute;   
+    right: 153px;
     top: -106px;
   }
   .test3{
-    height: 400px;position: absolute;           right: 80px;
+    height: 400px;
+    position: absolute;          
+    right: 117px;
     top: -142px;
   }
 }
@@ -98,10 +107,83 @@
 .z-index-99{
   z-index:99
 }
+.container-btn-politicas{
+  button{
+    background: #e2e2e2fc;
+    border: none;
+    padding: 4px 20px;
+    border-radius: 7px;
+    transition: all .2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    &.active{
+      background-color: $dark;
+      color:#fff;
+     
+    }
+    &.active.close-cookie{
+     background-color:   #ed4c78;
+     color:#FFF;
+    }
+  }
+}
+
+@media (min-width: 576px){
+  .modal-dialog {
+      max-width: 807px;
+      margin: 1.75rem auto;
+
+  }
+}
 @media (max-width: 768px){
+  .tab-pane.p-4{
+    padding: 0 !important;
+  }
+  .m-t-20-max{
+    margin-top: 20px;
+  }
+  .btn.collapsed{
+    & > .row{
+      margin: 0;
+      width: 100%;
+      .col-8{
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 25px;
+      }
+      .media-body{
+        width: 100%;
+      }
+    }
+  }
+  .container-btn-politicas{
+    display: flex;
+    grid-gap: 20px;
+    button{
+      width: 100%;
+    }
+  }
+  #cookiebarBox { 
+  
+    .container {
+      padding: 18px 16px !important;
+    }
+  }
+  .risk-dismiss{
+    .col-md-4{
+      display: flex;
+    }
+  }
+  #cookieBoxok{
+    width: 100%;
+  }
+  #cookieBoxok{
+    width: 100%;
+  }
 
   .test1{
-    height: 400px;position: absolute;        right: 105px;
+    height: 400px;
+    position: absolute;        
+    right: 105px;
     top: -110px;
   }
   .test2{
@@ -224,7 +306,7 @@ video{
       color: #ec6434;
  
       text-align: center;
-      padding: 10px;
+      padding: 18px 66px;
       overflow: hidden;
       width: 100% !important;
       max-width: 100% !important;
