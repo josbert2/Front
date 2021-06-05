@@ -393,11 +393,23 @@ video{
 
 .link-scroll{
   .color-principal{
-    animation: colorUpdate 4s linear infinite;
-    -webkit-animation: colorUpdate 4s linear infinite;
+    animation: colorUpdate 2s linear infinite;
   }
 }
 
+.color-automatic{
+  span{
+    animation: colorUpdate2 2s linear infinite;
+  }
+}
+@keyframes colorUpdate2 {
+  0% {
+    color: rgba(255, 255, 255, 0.7)
+  }
+  100% {
+    color:  #fff;
+  }
+}
 @keyframes colorUpdate {
   0% {
     color: #ec6434
@@ -405,4 +417,42 @@ video{
   100% {
     color: #ffbfa8
   }
+}
+.bg-soft-primary{
+	animation: float 8s ease-in-out infinite;
+}
+
+.img-fluid.rounded-lg{
+  animation: float2 8s ease-in-out infinite;
+  animation-delay: 8s
+}
+
+@keyframes float {
+	0% {
+	
+		transform: translate(0px);
+	}
+	50% {
+	
+		transform: translate(-30px, -30px);
+	}
+	100% {
+
+		transform: translate(0px);
+	}
+}
+
+@keyframes float2 {
+	0% {
+	
+		transform: translate(0px);
+	}
+	50% {
+	
+		transform: translate(30px, 30px);
+	}
+	100% {
+
+		transform: translate(0px);
+	}
 }
