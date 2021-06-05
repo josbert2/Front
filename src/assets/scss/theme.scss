@@ -412,10 +412,15 @@ video{
 }
 @keyframes colorUpdate2 {
   0% {
-    color: rgba(255, 255, 255, 0.7)
+    color: #212;
   }
   100% {
     color:  #fff;
+  }
+}
+.scroll-link:hover{
+  .nav-link{
+    color: #ec6434
   }
 }
 @keyframes colorUpdate {
