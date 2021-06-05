@@ -521,7 +521,7 @@
     <div class="w-lg-50 text-center mx-lg-auto mb-5 mb-md-9">
    
       <h4 class="display-5 mb-3"> <strong class="color-principal" data-aos="fade-up"   data-aos-delay="400">Valores</strong></h4>
-      <p data-aos="fade-up"   data-aos-delay="600">Conoce acerca de nuestros principales principios.</p>
+      <p data-aos="fade-up"   data-aos-delay="600">Conoce acerca de nuestros principales valores.</p>
     </div>
     <!-- End Title -->
 
@@ -716,9 +716,9 @@
             <!-- Nav Link -->
             <ul class="nav nav-sm nav-x-0 nav-white flex-column">
               <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Acerca de</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Sala de Prensa</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Vacantes</a></li>
+              <li class="nav-item"><a class="nav-link none-click" href="#">Sala de Prensa</a></li>
+              <li class="nav-item"><a class="nav-link none-click" href="#">Contactos</a></li>
+              <li class="nav-item"><a class="nav-link none-click" href="#">Vacantes</a></li>
             </ul>
             <!-- End Nav Link -->
           </div>
@@ -741,9 +741,9 @@
 
             <!-- Nav Link -->
             <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-              <li class="nav-item"><a class="nav-link" href="#">Proximamente manual de usuario</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Proximamente manual de comercio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Proximamente requisitos del comercio</a></li>
+              <li class="nav-item"><a class="nav-link none-click" href="#">Manual de usuario Proximamente</a></li>
+              <li class="nav-item"><a class="nav-link none-click" href="#">Manual de comercio Proximamente</a></li>
+              <li class="nav-item"><a class="nav-link none-click" href="#">Requisitos del comercio Proximamente</a></li>
             </ul>
             <!-- End Nav Link -->
           </div>
@@ -2007,6 +2007,10 @@
       setTimeout(() => {
         $('video').trigger('play');
       }, 3000);
+
+      $('.none-click').click(function(e){
+        e.preventDefault()
+      })
      
   </script>
 
