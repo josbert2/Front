@@ -24567,3 +24567,26 @@ video {
   max-width: 200px;
   margin: 0 auto;
 }
+
+.link-scroll .color-principal {
+  animation: colorUpdate 4s linear infinite;
+  -webkit-animation: colorUpdate 4s linear infinite;
+}
+
+@-webkit-keyframes colorUpdate {
+  0% {
+    color: #ec6434;
+  }
+  100% {
+    color: #ffbfa8;
+  }
+}
+
+@keyframes colorUpdate {
+  0% {
+    color: #ec6434;
+  }
+  100% {
+    color: #ffbfa8;
+  }
+}
