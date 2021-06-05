@@ -24223,6 +24223,16 @@ a:hover .text-hover-primary {
     right: -17px;
     /* Increase/Decrease this value for cross-browser compatibility */
     overflow-y: scroll;
+    /* Optional: show position indicator in red */
+  }
+  .js-sticky-block .card-body::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+  }
+  .js-sticky-block .card-body::-webkit-scrollbar-thumb {
+    background: #FF0000;
   }
   .nonde-max {
     display: none;
