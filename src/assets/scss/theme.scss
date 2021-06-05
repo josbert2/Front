@@ -391,3 +391,18 @@ video{
   
 }
 
+.link-scroll{
+  .color-principal{
+    animation: colorUpdate 4s linear infinite;
+    -webkit-animation: colorUpdate 4s linear infinite;
+  }
+}
+
+@keyframes colorUpdate {
+  0% {
+    color: #ec6434
+  }
+  100% {
+    color: #ffbfa8
+  }
+}
