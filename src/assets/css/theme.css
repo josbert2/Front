@@ -16224,8 +16224,8 @@ button:focus {
 }
 
 .avatar-lg.avatar-circle .avatar-lg-status {
-  bottom: -0.20312rem;
-  right: -0.20312rem;
+  bottom: -0.20313rem;
+  right: -0.20313rem;
 }
 
 .avatar-xl {
@@ -24196,7 +24196,34 @@ a:hover .text-hover-primary {
   height: 100%;
 }
 
+.flag-dropdown {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.selected-flag {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 @media (min-width: 768px) {
+  .js-sticky-block .card-body {
+    height: 500px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    /* Increase/Decrease this value for cross-browser compatibility */
+    overflow-y: scroll;
+  }
   .nonde-max {
     display: none;
   }
@@ -24529,15 +24556,4 @@ video {
   cursor: pointer;
   max-width: 200px;
   margin: 0 auto;
-}
-
-.js-sticky-block .card-body {
-  height: 500px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: -17px;
-  /* Increase/Decrease this value for cross-browser compatibility */
-  overflow-y: scroll;
 }

@@ -49,7 +49,29 @@
     height: 100%;
   }
 }
+.flag-dropdown{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.selected-flag{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 @media (min-width: 768px){
+  .js-sticky-block{
+    .card-body{
+      height: 500px;
+  
+      position: sticky;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+      overflow-y: scroll;
+    }
+  }
   .nonde-max{
     display:none
   }
@@ -361,15 +383,3 @@ video{
   
 }
 
-.js-sticky-block{
-  .card-body{
-    height: 500px;
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
-    overflow-y: scroll;
-  }
-}
