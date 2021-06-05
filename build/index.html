@@ -1195,7 +1195,7 @@
         
          <div class="row d-flex">
           <div class="col-md-8 d-flex align-items-center">
-              <p class="d-flex" style="text-align: left;">este sitio utiliza cookies para ayudar con la navegación y su capacidad para proporcionar comentarios, analizar su uso de productos y servicios para que podamos mejorarlos, ayudar con nuestros esfuerzos personales de promoción y marketing y proporcionar el consentimiento de terceros.
+              <p class="d-flex" style="text-align: left;font-size:14px">este sitio utiliza cookies para ayudar con la navegación y su capacidad para proporcionar comentarios, analizar su uso de productos y servicios para que podamos mejorarlos, ayudar con nuestros esfuerzos personales de promoción y marketing y proporcionar el consentimiento de terceros.
               </p>
           </div>
             <div class="col-md-4">
@@ -1869,7 +1869,8 @@
             $('.js-masked-input').each(function () {
               var mask = $.HSCore.components.HSMask.init($(this));
             });
-          });
+            $('video').bind('contextmenu',function() { return false; });
+      });
     $(document).on('ready', function () {
      
       // INITIALIZATION OF HEADER
