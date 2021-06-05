@@ -1854,6 +1854,23 @@
         });
       });
 
+      function getSearchParameters() {
+          var prmstr = window.location.search.substr(1);
+          return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+      }
+
+      function transformToAssocArray( prmstr ) {
+          var params = {};
+          var prmarr = prmstr.split("&");
+          for ( var i = 0; i < prmarr.length; i++) {
+              var tmparr = prmarr[i].split("=");
+              params[tmparr[0]] = tmparr[1];
+          }
+          return params;
+      }
+
+      var params = getSearchParameters();
+
       //Scroll ON Click
 
       $(document).on('click', '.scroll-link a[href^="#"]', function(e) {
@@ -1870,13 +1887,14 @@
         e.preventDefault();
 
         // top position relative to the document
+     
         if ($(this).attr('href') == '#sobre-nosotros' || 
         $(this).attr('href') == '#antecedentes' || 
         $(this).attr('href') == '#beniusuario'  || 
         $(this).attr('href') == '#benicomercio' ){
           var pos = $id.offset().top - 200;
         }else{
-          var pos = $id.offset().top;
+          var pos = $id.offset().top 
         }
         
 

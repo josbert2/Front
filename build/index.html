@@ -123,7 +123,7 @@
             <!-- Ayuda - Submenu -->
             <div id="blogSubMenu" class="hs-sub-menu dropdown-menu link-scroll" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
               <a class="dropdown-item " href="#comofunciona">¿Cómo funciona?</a>
-              <a class="dropdown-item none-click" href="#">roximamente </span> Requisitos del Comercio <span class="color-principal">P</a>
+              <a class="dropdown-item none-click" href="#"> </span> Requisitos del Comercio <span class="color-principal">Proximamente</a>
               <a class="dropdown-item none-click" href="#"> Preguntas Frecuentes <span class="color-principal">Proximamente</span></a>
             </div>
             <!-- End Submenu -->
@@ -1929,6 +1929,23 @@
         });
       });
 
+      function getSearchParameters() {
+          var prmstr = window.location.search.substr(1);
+          return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+      }
+
+      function transformToAssocArray( prmstr ) {
+          var params = {};
+          var prmarr = prmstr.split("&");
+          for ( var i = 0; i < prmarr.length; i++) {
+              var tmparr = prmarr[i].split("=");
+              params[tmparr[0]] = tmparr[1];
+          }
+          return params;
+      }
+
+      var params = getSearchParameters();
+
       //Scroll ON Click
 
       $(document).on('click', '.scroll-link a[href^="#"]', function(e) {
@@ -1945,13 +1962,14 @@
         e.preventDefault();
 
         // top position relative to the document
+     
         if ($(this).attr('href') == '#sobre-nosotros' || 
         $(this).attr('href') == '#antecedentes' || 
         $(this).attr('href') == '#beniusuario'  || 
         $(this).attr('href') == '#benicomercio' ){
           var pos = $id.offset().top - 200;
         }else{
-          var pos = $id.offset().top;
+          var pos = $id.offset().top 
         }
         
 
