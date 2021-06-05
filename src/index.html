@@ -27,7 +27,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
-
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
@@ -391,7 +391,8 @@
           <!-- Icon Blocks -->
           <div class="text-center px-lg-3 height-300px-mb">
             <figure class="max-w-10rem mx-auto mb-4 full-img-2">
-              <video  style="width: 100%;"  autoplay loop>
+              <video  style="width: 100%;"
+                      data-setup='{"controls": false, "autoplay": true, "preload": "auto"}'>
                 <source src="./assets/img/REUNIONENRESTAURANTE.mp4" type="video/mp4" />
               </video>
 
@@ -424,7 +425,10 @@
           <div class="text-center px-lg-3 height-300px-mb">
             <figure class="max-w-10rem mx-auto mb-4 full-img-2">
              
-              <video src="./assets/img/COCINANDO.mp4" style="width: 100%;"  autoplay loop>
+              <video src="./assets/img/COCINANDO.mp4" 
+                     style="width: 100%;" 
+                     data-setup='{"controls": false, "autoplay": true, "preload": "auto"}'
+                     >
                 <source src="./assets/img/COCINANDO.mp4" type="video/mp4" />
               </video>
             </figure>
@@ -1776,7 +1780,7 @@
   <script src="./assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
   <script src="./node_modules/typed.js/lib/typed.min.js"></script>
   <script src="./node_modules/aos/dist/aos.js"></script>
-
+  <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
   <!-- JS Front -->
   <!-- bundlejs:theme [.] -->
   <script src="./assets/js/hs.core.js"></script>
@@ -2038,10 +2042,7 @@
               cookiebarBox.style.display = 'block';
           }
       })();
-      setTimeout(() => {
-        $('video').trigger('play');
-      }, 3000);
-
+  
       $('.none-click').click(function(e){
         e.preventDefault()
       })
