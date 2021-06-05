@@ -24213,6 +24213,16 @@ a:hover .text-hover-primary {
 }
 
 @media (min-width: 768px) {
+  .bg-soft-primary {
+    -webkit-animation: float 8s ease-in-out infinite;
+            animation: float 8s ease-in-out infinite;
+  }
+  .img-fluid.rounded-lg {
+    -webkit-animation: float2 8s ease-in-out infinite;
+            animation: float2 8s ease-in-out infinite;
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+  }
   .js-sticky-block .card-body {
     height: 500px;
     position: -webkit-sticky;
@@ -24612,18 +24622,6 @@ video {
   100% {
     color: #ffbfa8;
   }
-}
-
-.bg-soft-primary {
-  -webkit-animation: float 8s ease-in-out infinite;
-          animation: float 8s ease-in-out infinite;
-}
-
-.img-fluid.rounded-lg {
-  -webkit-animation: float2 8s ease-in-out infinite;
-          animation: float2 8s ease-in-out infinite;
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
 }
 
 @-webkit-keyframes float {

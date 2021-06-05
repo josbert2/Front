@@ -60,6 +60,14 @@
   align-items: center;
 }
 @media (min-width: 768px){
+  .bg-soft-primary{
+    animation: float 8s ease-in-out infinite;
+  }
+  
+  .img-fluid.rounded-lg{
+    animation: float2 8s ease-in-out infinite;
+    animation-delay: 8s
+  }
   .js-sticky-block{
     .card-body{
       height: 500px;
@@ -418,14 +426,7 @@ video{
     color: #ffbfa8
   }
 }
-.bg-soft-primary{
-	animation: float 8s ease-in-out infinite;
-}
 
-.img-fluid.rounded-lg{
-  animation: float2 8s ease-in-out infinite;
-  animation-delay: 8s
-}
 
 @keyframes float {
 	0% {
