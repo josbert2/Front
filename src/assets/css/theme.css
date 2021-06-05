@@ -24212,6 +24212,21 @@ a:hover .text-hover-primary {
       align-items: center;
 }
 
+.country-list {
+  /* Optional: show position indicator in red */
+}
+
+.country-list::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.country-list::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
 @media (min-width: 768px) {
   .bg-soft-primary {
     -webkit-animation: float 8s ease-in-out infinite;
