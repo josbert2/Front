@@ -24375,6 +24375,12 @@ a:hover .text-hover-primary {
     max-width: 807px;
     margin: 1.75rem auto;
   }
+  .p-asbolute-max {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 
 @media (max-width: 768px) {
@@ -24700,5 +24706,18 @@ video {
   100% {
     -webkit-transform: translate(0px);
             transform: translate(0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-12-max {
+    width: 100%;
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .col-md-12-max.mb-5, .col-md-12-max.my-5 {
+    margin-bottom: 25px !important;
   }
 }
