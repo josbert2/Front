@@ -24384,6 +24384,17 @@ a:hover .text-hover-primary {
 }
 
 @media (max-width: 768px) {
+  .navbar-expand-lg .navbar-brand,
+  .navbar-expand-lg .navbar-brand > img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .content-box-border {
+    border: 5px !important;
+    margin-top: 10px;
+  }
   .tab-pane.p-4 {
     padding: 0 !important;
   }
