@@ -24742,20 +24742,6 @@ video {
   right: 0;
 }
 
-@media (max-width: 1040px) {
-  .image-hero {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-}
-
-@media (max-width: 1190px) {
-  .image-hero {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-}
-
 @media (max-width: 990px) {
   .image-hero {
     display: none;
