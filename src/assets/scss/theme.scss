@@ -512,15 +512,26 @@ video{
   }
 }
 
+@media (max-width: 1551px){
+  .image-hero{
+   
+  }
+}
+
+@media (max-width: 1315px){
+  .image-hero{
+  
+  }
+}
 @media (max-width: 1040px){
   .image-hero{
-    transform: scale(0.9);
+ 
   }
 }
 
 @media (max-width: 1190px){
   .image-hero{
-    transform: scale(0.7);
+    
   }
 }
 
