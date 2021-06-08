@@ -26,3 +26,21 @@ $.extend({
 });
 
 $.HSCore.init();
+
+$('.scroll-link').click(function(){
+	
+	if ($(window).width() < 768){
+		setTimeout(function(){
+			if ($('.navbar-collapse.collapse').hasClass('show')){
+				$('.navbar-collapse.collapse').removeClass('show')
+	
+				$('.navbar-toggler').attr('aria-expanded', false)
+				
+			}else{
+				$('.navbar-collapse.collapse').addClass('show')
+				$('.navbar-toggler').attr('aria-expanded', true)
+			}
+		}, 100)
+	
+	}
+})
