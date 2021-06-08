@@ -24392,8 +24392,8 @@ a:hover .text-hover-primary {
         align-items: center;
   }
   .content-box-border {
-    border: 5px !important;
-    margin-top: 10px;
+    border-radius: 5px !important;
+    margin-top: 25px;
   }
   .tab-pane.p-4 {
     padding: 0 !important;
@@ -24856,7 +24856,7 @@ video {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
   50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    border-radius: 30% 73% 28% 9% / 40% 60% 30% 60%;
   }
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -24868,7 +24868,7 @@ video {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
   50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    border-radius: 30% 73% 28% 9% / 40% 60% 30% 60%;
   }
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
