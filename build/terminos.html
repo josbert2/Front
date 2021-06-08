@@ -129,7 +129,11 @@ data-hs-header-options='{
 </div>
 </header>
 <!-- ========== END HEADER ========== -->
-
+  <style>
+    .nav-link{
+        cursor: pointer
+    }
+  </style>
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
@@ -160,94 +164,94 @@ data-hs-header-options='{
             <div class="card-body">
               <ul class="js-scroll-nav nav nav-sm nav-x-0 flex-column">
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#1">1. INTRODUCCIÓN
+                  <a class="nav-link font-weight-bold mb-2" data-href="#1">1. INTRODUCCIÓN
                   </a>
                 
                     
                
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mb-2 font-weight-bold" href="#2">2. CONCEPTO DE SAVEFOOD</a>
+                  <a class="nav-link mb-2 font-weight-bold" data-href="#2">2. CONCEPTO DE SAVEFOOD</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mb-2 font-weight-bold" href="#3">3. ACEPTACIÓN</a>
+                  <a class="nav-link mb-2 font-weight-bold" data-href="#3">3. ACEPTACIÓN</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#4">4. DATOS DE CONTACTO DE SAVEFOOD Y SERVICIO AL CLIENTE
+                  <a class="nav-link font-weight-bold mb-2" data-href="#4">4. DATOS DE CONTACTO DE SAVEFOOD Y SERVICIO AL CLIENTE
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#5">5. PRODUCTO E INFORMACIÓN SOBRE EL PRODUCTO
+                  <a class="nav-link font-weight-bold mb-2" data-href="#5">5. PRODUCTO E INFORMACIÓN SOBRE EL PRODUCTO
 
 </a>
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#6">6. COMPRA DE PRODUCTOS</a>
+                  <a class="nav-link font-weight-bold mb-2" data-href="#6">6. COMPRA DE PRODUCTOS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#7">7. CONFIRMACIÓN DE LA COMPRA
+                  <a class="nav-link font-weight-bold mb-2" data-href="#7">7. CONFIRMACIÓN DE LA COMPRA
                   </a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#8">8. DERECHO DE CANCELACIÓN
+                  <a class="nav-link font-weight-bold mb-2" data-href="#8">8. DERECHO DE CANCELACIÓN
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#9">9. RECEPCIÓN
-
-
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#10">10. PRECIO
+                  <a class="nav-link font-weight-bold mb-2" data-href="#9">9. RECEPCIÓN
 
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#11">11. PAGO
+                  <a class="nav-link font-weight-bold mb-2" data-href="#10">10. PRECIO
 
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#12">12. DERECHO DE RECLAMACIÓN
+                  <a class="nav-link font-weight-bold mb-2" data-href="#11">11. PAGO
 
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#13">13. VALORACIONES DE LOS USUARIOS
+                  <a class="nav-link font-weight-bold mb-2" data-href="#12">12. DERECHO DE RECLAMACIÓN
+
+
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold mb-2" data-href="#13">13. VALORACIONES DE LOS USUARIOS
 
 
                   </a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#14">14. CONDUCTA DEL CLIENTE
-
-
-
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#15">15. LIMITACIONES DE LA RESPONSABILIDAD
+                  <a class="nav-link font-weight-bold mb-2" data-href="#14">14. CONDUCTA DEL CLIENTE
 
 
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#16">16. PROPIEDAD INTELECTUAL
+                  <a class="nav-link font-weight-bold mb-2" data-href="#15">15. LIMITACIONES DE LA RESPONSABILIDAD
 
 
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#17">17. RÉGIMEN JURÍDICO
+                  <a class="nav-link font-weight-bold mb-2" data-href="#16">16. PROPIEDAD INTELECTUAL
+
+
+
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold mb-2" data-href="#17">17. RÉGIMEN JURÍDICO
 
 
 
@@ -1084,7 +1088,15 @@ data-hs-header-options='{
       // INITIALIZATION OF SCROLL NAV
       // =======================================================
       $('.js-scroll-nav').each(function () {
-        var scrollNav = new HSScrollNav($(this)).init();
+        //var scrollNav = new HSScrollNav($(this)).init();
+      });
+
+      $('.nav-item a').click(function () {
+          $('body, html').animate({
+              scrollTop: $( $.attr(this, 'data-href') ).offset().top - 80
+          }, 500);
+
+          return false;
       });
 
 
