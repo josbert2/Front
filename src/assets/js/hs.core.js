@@ -45,3 +45,6 @@ $('.scroll-link').click(function(){
 	}
 })
 
+$('.none-click').click(function(e){
+	e.preventDefault()
+  })
