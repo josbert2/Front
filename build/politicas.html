@@ -57,6 +57,11 @@ data-hs-header-options='{
     </svg>
   </span>
 </button>
+<style>
+  .nav-link{
+    cursor: pointer
+ }
+</style>
 <!-- End Responsive Toggle Button -->
 
 <!-- Navigation -->
@@ -162,92 +167,92 @@ data-hs-header-options='{
             <div class="card-body">
               <ul class="js-scroll-nav nav nav-sm nav-x-0 flex-column">
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#1">1. POLÍTICA DE PRIVACIDAD Y SEGURIDAD
+                  <a class="nav-link font-weight-bold mb-2" data-href="#1">1. POLÍTICA DE PRIVACIDAD Y SEGURIDAD
                   </a>
                  
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mb-2 font-weight-bold" href="#2">2. DEFINICIONES</a>
+                  <a class="nav-link mb-2 font-weight-bold" data-href="#2">2. DEFINICIONES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mb-2 font-weight-bold" href="#3">3. CONSENTIMIENTO INFORMADO DE ALMACENAMIENTO Y USO DE INFORMACIÓN</a>
+                  <a class="nav-link mb-2 font-weight-bold" data-href="#3">3. CONSENTIMIENTO INFORMADO DE ALMACENAMIENTO Y USO DE INFORMACIÓN</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#4">4. RECOPILACIÓN DE INFORMACIÓN
+                  <a class="nav-link font-weight-bold mb-2" data-href="#4">4. RECOPILACIÓN DE INFORMACIÓN
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#5">5. INFORMACIÓN QUE USTED NOS PROPORCIONA
+                  <a class="nav-link font-weight-bold mb-2" data-href="#5">5. INFORMACIÓN QUE USTED NOS PROPORCIONA
 
 </a>
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#6">6. INFORMACIÓN QUE RECOPILAMOS A TRAVÉS DE SU USO DE NUESTROS SERVICIOS</a>
+                  <a class="nav-link font-weight-bold mb-2" data-href="#6">6. INFORMACIÓN QUE RECOPILAMOS A TRAVÉS DE SU USO DE NUESTROS SERVICIOS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#7">7. USO DE INFORMACIÓNA
+                  <a class="nav-link font-weight-bold mb-2" data-href="#7">7. USO DE INFORMACIÓNA
                   </a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#8">8. COMUNICACIÓN CON EL USUARIO
+                  <a class="nav-link font-weight-bold mb-2" data-href="#8">8. COMUNICACIÓN CON EL USUARIO
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#9">9. UTILIZACIÓN DE COOKIES Y OTROS SISTEMAS Y TECNOLOGÍAS
-
-
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#10">10. COOKIES O GALLETAS INFORMÁTICAS
+                  <a class="nav-link font-weight-bold mb-2" data-href="#9">9. UTILIZACIÓN DE COOKIES Y OTROS SISTEMAS Y TECNOLOGÍAS
 
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#11">11. WEB BEACONS O FARO WEB
+                  <a class="nav-link font-weight-bold mb-2" data-href="#10">10. COOKIES O GALLETAS INFORMÁTICAS
 
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#12">12. WEB SERVER LOGS
+                  <a class="nav-link font-weight-bold mb-2" data-href="#11">11. WEB BEACONS O FARO WEB
 
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#13">13. TECNOLOGÍA DE GEOLOCALIZACIÓN
+                  <a class="nav-link font-weight-bold mb-2" data-href="#12">12. WEB SERVER LOGS
+
+
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold mb-2" data-href="#13">13. TECNOLOGÍA DE GEOLOCALIZACIÓN
 
 
                   </a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#14">14. REORIENTACIÓN
-
-
-
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#15">15. ASPECTOS DE SEGURIDAD DE LOS DATOS Y TRANSACCIONES
+                  <a class="nav-link font-weight-bold mb-2" data-href="#14">14. REORIENTACIÓN
 
 
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#16">16. LIBERACIÓN DE RESPONSABILIDAD
+                  <a class="nav-link font-weight-bold mb-2" data-href="#15">15. ASPECTOS DE SEGURIDAD DE LOS DATOS Y TRANSACCIONES
 
 
 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-bold mb-2" href="#17">17. CAMBIOS EN LA POLÍTICA DE PRIVACIDAD
+                  <a class="nav-link font-weight-bold mb-2" data-href="#16">16. LIBERACIÓN DE RESPONSABILIDAD
+
+
+
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold mb-2" data-href="#17">17. CAMBIOS EN LA POLÍTICA DE PRIVACIDAD
 
 
 
@@ -1028,7 +1033,15 @@ data-hs-header-options='{
           position: 'left'
         }
       }).init();
+      
 
+      $('.nav-item a').click(function () {
+      $('body, html').animate({
+          scrollTop: $( $.attr(this, 'data-href') ).offset().top - 80
+      }, 500);
+
+      return false;
+  });
 
       // INITIALIZATION OF UNFOLD
       // =======================================================
@@ -1065,7 +1078,7 @@ data-hs-header-options='{
       // INITIALIZATION OF SCROLL NAV
       // =======================================================
       $('.js-scroll-nav').each(function () {
-        var scrollNav = new HSScrollNav($(this)).init();
+        //var scrollNav = new HSScrollNav($(this)).init();
       });
 
 
