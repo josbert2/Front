@@ -48,3 +48,16 @@ $('.scroll-link').click(function(){
 $('.none-click').click(function(e){
 	e.preventDefault()
   })
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+$('.cookieok').click(function(){
+	gtag('event', 'gc', {
+		'event_category' : 'acceptCookies',
+		'event_label' : 'acceptCookies'
+	  });
+	  setCookie("acceptCookies", true, 60);
+})
