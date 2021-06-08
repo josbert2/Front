@@ -192,7 +192,7 @@
         <!-- End Content -->
 
         <!-- SVG Shape -->
-        <figure class="col-lg-7 col-xl-6 d-none d-lg-block position-absolute top-0 right-0 pr-0 ie-main-hero" style="margin-top: -8.25rem;">
+        <!--<figure class="col-lg-7 col-xl-6 d-none d-lg-block position-absolute top-0 right-0 pr-0 ie-main-hero" style="margin-top: -8.25rem;">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 937.5 979.2">
             <path fill="#F9FBFF" d="M565.5,957.4c81.1-7.4,155.5-49.3,202.4-115.7C840,739.8,857,570,510.7,348.3C-35.5-1.5-4.2,340.3,2.7,389
               c0.7,4.7,1.2,9.5,1.7,14.2l29.3,321c14,154.2,150.6,267.8,304.9,253.8L565.5,957.4z"/>
@@ -203,10 +203,14 @@
               <use xlink:href="#mainHeroSVG1"/>
             </clipPath>
             <g transform="matrix(1 0 0 1 0 0)" clip-path="url(#mainHeroSVG2)">
-              <image width="850" height="850" xlink:href="./assets/img/1.png" transform="matrix(1.4462 0 0 1.4448 52.8755 0)"></image>
+              <image width="850" height="850" xlink:href="./assets/img/1.jpg" transform="matrix(1.4462 0 0 1.4448 52.8755 0)"></image>
             </g>
           </svg>
-        </figure>
+        </figure>-->
+        <div class="image-hero">
+          <img src="./assets/img/tosvg.png" alt="">
+          <img src="./assets/img/2.png" alt="">
+        </div>
         <!-- End SVG Shape -->
       </div>
     </div>
@@ -791,7 +795,25 @@
   
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
-
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
  <!-- ========== FOOTER ========== -->
  <footer class="bg-dark">
   <div class="container">
@@ -1205,6 +1227,12 @@
     </div>
 </div>
   <!-- Go to Top -->
+  <style>
+    .go-to{
+      bottom: 15px;
+      right: 15px
+    }
+  </style>
   <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
      data-hs-go-to-options='{
        "offsetTop": 700,
@@ -1855,6 +1883,7 @@
 
   <!-- JS Implementing Plugins -->
   <script src="./assets/js/vendor.min.js"></script>
+  
 
   <!-- JS Front -->
   <script src="./assets/js/theme.min.js"></script>
@@ -1863,6 +1892,19 @@
   <!-- JS Plugins Init. -->
   <script>
       $(document).on('ready', function () {
+              
+          $(window).scroll(function() {
+              if ($(this).scrollTop() > 300) {
+                  $('.js-go-to').addClass('fadeInUp');
+                  $('.js-go-to').removeClass('fadeOutDown');
+                  $('.js-go-to').css('visibility', ' visible')
+              } else {
+                $('.js-go-to').removeClass('fadeInUp');
+                  $('.js-go-to').addClass('fadeOutDown');
+                  $('.js-go-to').css('visibility', 'hidden')
+
+              }
+          });
         // INITIALIZATION OF MASKED INPUT
             // =======================================================
             $('.js-masked-input').each(function () {
